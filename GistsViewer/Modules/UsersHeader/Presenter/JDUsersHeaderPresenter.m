@@ -37,7 +37,6 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
-    [self.output usersHeaderViewPrepared];
 }
 
 - (void)handleTapCellAtIndex:(NSInteger)index {

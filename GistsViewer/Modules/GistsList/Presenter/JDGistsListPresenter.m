@@ -53,7 +53,9 @@
 }
 
 - (void)handleGistSelected:(JDGist *)gist {
-    [self.output gistSelected:gist];
+    if ([self.output respondsToSelector:@selector(gistSelected:)]) {
+        [self.output gistSelected:gist];
+    }
     [self.router openGistDetailModuleWithGist:gist];
 }
 

@@ -13,6 +13,8 @@
 @protocol JDGistsListModuleOutput <NSObject>
 
 - (void)gistsLoaded:(NSArray *)gists isCached:(BOOL)isCached;
+
+@optional
 - (void)gistSelected:(JDGist *)gist;
 
 @end

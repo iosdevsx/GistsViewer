@@ -53,18 +53,10 @@
 #pragma mark - JDGistsListModuleOutput
 
 - (void)gistsLoaded:(NSArray *)gists isCached:(BOOL)isCached {
-//    [self.interactor fetchUserListForGists:gists isCached:isCached];
-}
-
-- (void)gistSelected:(JDGist *)gist {
-    
+    [self.interactor fetchUserListForGists:gists isCached:isCached];
 }
 
 #pragma mark - JDUsersHeaderModuleOutput
-
-- (void)usersHeaderViewPrepared {
-    
-}
 
 - (void)selectedUser:(JDOwner *)user {
     [self.router openGistsListModuleForUser:user];

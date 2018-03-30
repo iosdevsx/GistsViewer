@@ -12,7 +12,6 @@
 
 @protocol JDUsersHeaderModuleOutput <NSObject>
 
-- (void)usersHeaderViewPrepared;
 - (void)selectedUser:(JDOwner *)user;
 
 @end
