@@ -7,25 +7,349 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3C0CBC8205BED7F00658F75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C0CBC7205BED7F00658F75 /* AppDelegate.m */; };
-		F3C0CBCB205BED7F00658F75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C0CBCA205BED7F00658F75 /* ViewController.m */; };
-		F3C0CBCE205BED7F00658F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C0CBCC205BED7F00658F75 /* Main.storyboard */; };
-		F3C0CBD0205BED7F00658F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C0CBCF205BED7F00658F75 /* Assets.xcassets */; };
-		F3C0CBD3205BED7F00658F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C0CBD1205BED7F00658F75 /* LaunchScreen.storyboard */; };
-		F3C0CBD6205BED7F00658F75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C0CBD5205BED7F00658F75 /* main.m */; };
+		04BFA71758B8ACD2370BBDF2 /* JDGistDetailAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F4EFD8757E837B30090DB1 /* JDGistDetailAssembly.m */; };
+		16E2EB783EE0D5F2373CD115 /* JDCommitListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 058A08DE965EC208103AA407 /* JDCommitListAssembly.m */; };
+		1CF076E563A65B8668955920 /* JDFilesListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3872D764C5796DB36BA5F6 /* JDFilesListRouter.m */; };
+		2012B8AE162E905A7A94F2B5 /* JDCommitListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C3B81541E11260C461F402 /* JDCommitListRouter.m */; };
+		23A6AC0958B257F2712C2BAE /* JDGistDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEFAFD14C38AE788676AA6E /* JDGistDetailInteractor.m */; };
+		2A6C46CF6D3F06A0DAA7D82E /* JDFilesDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2358EF601C6D07810B3881 /* JDFilesDetailPresenter.m */; };
+		39FD11EC9A761B7F426629CB /* JDUsersHeaderPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EB4A90712F9741E3DCF696 /* JDUsersHeaderPresenter.m */; };
+		45BAD52E336461B320121D5C /* JDFilesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC056FB34018D21973910D8D /* JDFilesListViewController.m */; };
+		4DA88E16CA1957ECDD234F22 /* JDGistDetailRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B4D46D6F40CF5736DC18C9 /* JDGistDetailRouter.m */; };
+		5FCDFDAEA46C60498589F3D2 /* JDFilesDetailRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1AB3A2B3B9D02DBEADDC2F /* JDFilesDetailRouter.m */; };
+		66417B26DC471D5F834B57EF /* JDFilesDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D94F21AA0A25CF399163D117 /* JDFilesDetailInteractor.m */; };
+		6F3ED628DD185860E5618F1D /* JDGistsListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 774D9457C7B7A1F8178910AC /* JDGistsListInteractor.m */; };
+		7DD729F65750A4A5722E7345 /* JDGistDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE738221F4448AAC798174 /* JDGistDetailPresenter.m */; };
+		8C0B4524206A22AC00FA006B /* JDUsersHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B4523206A22AC00FA006B /* JDUsersHeaderViewController.xib */; };
+		8C50CE9C206E035C003B8B07 /* JDCommitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50CE9A206E035C003B8B07 /* JDCommitCell.m */; };
+		8C50CE9D206E035C003B8B07 /* JDCommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C50CE9B206E035C003B8B07 /* JDCommitCell.xib */; };
+		8C50CEA0206E06C7003B8B07 /* JDTableView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50CE9F206E06C7003B8B07 /* JDTableView+Utils.m */; };
+		8C50CEA8206E0F90003B8B07 /* ForksListResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50CEA7206E0F90003B8B07 /* ForksListResponseObject.m */; };
+		8C50CEAB206E1109003B8B07 /* FilesListResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50CEAA206E1109003B8B07 /* FilesListResponseObject.m */; };
+		8C5B8DFC20640D8400CEF3BC /* JDGist.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B8DFB20640D8400CEF3BC /* JDGist.m */; };
+		8C5B8DFF20640DA600CEF3BC /* Gists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B8DFD20640DA600CEF3BC /* Gists.xcdatamodeld */; };
+		8C5B8E1E2064122900CEF3BC /* GistsListResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B8E1D2064122900CEF3BC /* GistsListResponseObject.m */; };
+		8C5B8E222064161700CEF3BC /* PONSOConverterImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B8E212064161700CEF3BC /* PONSOConverterImplementation.m */; };
+		8C5B8E27206A169C00CEF3BC /* JDUsersServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B8E26206A169C00CEF3BC /* JDUsersServiceImplementation.m */; };
+		8C5B8E2B206A16BF00CEF3BC /* JDUsersServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B8E2A206A16BF00CEF3BC /* JDUsersServiceAssembly.m */; };
+		8C64CE10206B62590002AF0A /* UIColor+JD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C64CE0F206B62590002AF0A /* UIColor+JD.m */; };
+		8C64CE13206B63AC0002AF0A /* UIViewController+JD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C64CE12206B63AC0002AF0A /* UIViewController+JD.m */; };
+		8C64CE16206B64370002AF0A /* JDRetryStubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C64CE15206B64370002AF0A /* JDRetryStubView.m */; };
+		8C64CE18206B64620002AF0A /* JDRetryStubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C64CE17206B64620002AF0A /* JDRetryStubView.xib */; };
+		8C64CE1B206B65150002AF0A /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C64CE1A206B65150002AF0A /* UIView+Utils.m */; };
+		8C6FA582206AD5E500DF42C1 /* JDGistDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C6FA581206AD5E500DF42C1 /* JDGistDetailHeaderView.xib */; };
+		8C6FA585206AD8F700DF42C1 /* JDGistDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FA584206AD8F700DF42C1 /* JDGistDetailHeaderView.m */; };
+		8CF07905206C238400B86DD5 /* File+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF07904206C238400B86DD5 /* File+CoreDataProperties.m */; };
+		945E98830F2AD12474E1C69B /* JDUsersHeaderInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA709288691396667E9FF /* JDUsersHeaderInteractor.m */; };
+		987638889B071CDC799A2EB5 /* JDGistsListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE24CC1DFF3BE37675AD0B /* JDGistsListAssembly.m */; };
+		9A0B58AA75B89991E6BF3F19 /* JDCommitListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E259CDDF1F25B4AFDAD81AE5 /* JDCommitListInteractor.m */; };
+		9B314772453E4DBC93E62E2A /* JDGistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444192248F251A00AA00FF76 /* JDGistDetailViewController.m */; };
+		A2F29C67E8311630E85829AB /* JDFilesListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDD8C22F761826555C46E30 /* JDFilesListPresenter.m */; };
+		A3D7167BD298341EF02BB424 /* JDCommitListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D407FE059EBFB0356B68C1 /* JDCommitListPresenter.m */; };
+		AAAFC406525BB0C4B6F63548 /* JDGistsListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D7C478C4F9BC2D8D6F561 /* JDGistsListRouter.m */; };
+		B2C8A209145BFBA40AA92B34 /* JDUsersHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3282BE0837DD0AB0C1F67F /* JDUsersHeaderViewController.m */; };
+		BEE8411806D683AD97CFD266 /* JDFilesListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FA354F564966F33A27C7 /* JDFilesListInteractor.m */; };
+		C015597FDB9478CD5F381282 /* JDFilesDetailAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D15F73530BD579C357F2CAA5 /* JDFilesDetailAssembly.m */; };
+		C7E2A14713B7AA1DD4F7918D /* JDCommitListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B67F9E0B2C12C2811B973E7 /* JDCommitListViewController.m */; };
+		CC0F50512DEECE233A9192A7 /* libPods-GistsViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 782922559D638821C5DB35D8 /* libPods-GistsViewer.a */; };
+		D25276444CDB6756B81B0ED4 /* JDFilesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF7F9223A2EE05F9BD0A83 /* JDFilesDetailViewController.m */; };
+		D3EA5015B702C262F1B45B0F /* JDGistsListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D7600A7E3A97CF56C0C0C1 /* JDGistsListPresenter.m */; };
+		D4FC256840B5B86A40B354E7 /* JDUsersHeaderAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C9C23C094338AEB61002D /* JDUsersHeaderAssembly.m */; };
+		D8A796B9A2E2BECB0B03E9F1 /* JDFilesListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEE8C278F3B7A2C2968B34 /* JDFilesListAssembly.m */; };
+		E8BAF47386FC82DC7EBEA69B /* JDGistsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7F44E5A85060543740757E /* JDGistsListViewController.m */; };
+		F3012C32206BB45100006BA0 /* JDGistDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C31206BB45100006BA0 /* JDGistDetailCell.m */; };
+		F3012C34206BB45C00006BA0 /* JDGistDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3012C33206BB45C00006BA0 /* JDGistDetailCell.xib */; };
+		F3012C38206BB6D100006BA0 /* JDFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C36206BB6D100006BA0 /* JDFileCell.m */; };
+		F3012C39206BB6D100006BA0 /* JDFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3012C37206BB6D100006BA0 /* JDFileCell.xib */; };
+		F3012C3E206CD26200006BA0 /* Popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3012C3B206CD26100006BA0 /* Popup.xib */; };
+		F3012C3F206CD26200006BA0 /* Popup.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C3D206CD26200006BA0 /* Popup.m */; };
+		F3012C45206CE68600006BA0 /* JDResponseConverterImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C44206CE68600006BA0 /* JDResponseConverterImplementation.m */; };
+		F3012C4A206CE8C200006BA0 /* JDResponseConverterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C49206CE8C200006BA0 /* JDResponseConverterAssembly.m */; };
+		F3012C4F206CE94400006BA0 /* JDCoreDataServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C4E206CE94400006BA0 /* JDCoreDataServiceImplementation.m */; };
+		F3012C53206CE95F00006BA0 /* JDCoreDataServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C52206CE95F00006BA0 /* JDCoreDataServiceAssembly.m */; };
+		F3012C57206CF3A100006BA0 /* JDRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C56206CF3A100006BA0 /* JDRelation.m */; };
+		F358C876206A4264002F97FE /* JDUsersHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F358C875206A4264002F97FE /* JDUsersHeaderCell.m */; };
+		F358C878206A4270002F97FE /* JDUsersHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F358C877206A4270002F97FE /* JDUsersHeaderCell.xib */; };
+		F3AC0C3D206D1E8D0091C0A7 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		F3AC0C3E206D1E8D0091C0A7 /* Commit+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AC0C3C206D1E8D0091C0A7 /* Commit+CoreDataProperties.m */; };
+		F3AC0C41206D1EDA0091C0A7 /* JDCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AC0C40206D1EDA0091C0A7 /* JDCommit.m */; };
+		F3AC0C44206D26380091C0A7 /* CommitListResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AC0C43206D26380091C0A7 /* CommitListResponseObject.m */; };
+		F3EA490E20628E18003695C7 /* JDGistsServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48D320628E18003695C7 /* JDGistsServiceAssembly.m */; };
+		F3EA490F20628E18003695C7 /* JDGistsServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48D720628E18003695C7 /* JDGistsServiceImplementation.m */; };
+		F3EA491020628E18003695C7 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48DC20628E18003695C7 /* ApplicationAssembly.m */; };
+		F3EA491120628E18003695C7 /* ApplicationCoordinatorImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48E020628E18003695C7 /* ApplicationCoordinatorImplementation.m */; };
+		F3EA491220628E18003695C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48E320628E18003695C7 /* AppDelegate.m */; };
+		F3EA491320628E18003695C7 /* JDDashboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48E720628E18003695C7 /* JDDashboardAssembly.m */; };
+		F3EA491420628E18003695C7 /* JDDashboardPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48ED20628E18003695C7 /* JDDashboardPresenter.m */; };
+		F3EA491520628E18003695C7 /* JDDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48F020628E18003695C7 /* JDDashboardViewController.m */; };
+		F3EA491720628E18003695C7 /* JDDashboardInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48F520628E18003695C7 /* JDDashboardInteractor.m */; };
+		F3EA491820628E18003695C7 /* JDDashboardRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48FC20628E18003695C7 /* JDDashboardRouter.m */; };
+		F3EA491920628E18003695C7 /* JDRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48FE20628E18003695C7 /* JDRoutes.m */; };
+		F3EA491A20628E18003695C7 /* APIAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA490220628E18003695C7 /* APIAssembly.m */; };
+		F3EA491B20628E18003695C7 /* APIImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA490420628E18003695C7 /* APIImplementation.m */; };
+		F3EA492620628E9B003695C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA492020628E9B003695C7 /* main.m */; };
+		F3EA492720628E9B003695C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA492220628E9B003695C7 /* LaunchScreen.storyboard */; };
+		F3EA492820628E9B003695C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EA492420628E9B003695C7 /* Assets.xcassets */; };
+		F3EA495D2064D40B003695C7 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA495C2064D40B003695C7 /* NSArray+Utils.m */; };
+		F3EA49622064D8AD003695C7 /* PONSOConverterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA49612064D8AD003695C7 /* PONSOConverterAssembly.m */; };
+		F3EA49662064E213003695C7 /* JDOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA49652064E213003695C7 /* JDOwner.m */; };
+		F3EA49692064E51D003695C7 /* JDFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA49682064E51D003695C7 /* JDFile.m */; };
+		F3ECCCC02069175000CB82D5 /* JDGistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECCCBE2069175000CB82D5 /* JDGistCell.m */; };
+		F3ECCCC12069175000CB82D5 /* JDGistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3ECCCBF2069175000CB82D5 /* JDGistCell.xib */; };
+		F3ECCCC420691CDB00CB82D5 /* JDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECCCC320691CDB00CB82D5 /* JDTableViewController.m */; };
+		F3ECCCCE2069212000CB82D5 /* JDTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECCCCD2069212000CB82D5 /* JDTableSection.m */; };
+		F3ECCCD12069213300CB82D5 /* JDTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECCCD02069213300CB82D5 /* JDTableCell.m */; };
+		F3ECCCD42069241600CB82D5 /* JDTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECCCD32069241600CB82D5 /* JDTableView.m */; };
+		F9DBD4490DB61344CEF1373E /* JDUsersHeaderRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B50E1F9992C91B9385F0B945 /* JDUsersHeaderRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01BED2379972D1D1FABDBC25 /* JDGistsListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListViewController.h; sourceTree = "<group>"; };
+		0208588475F2C8B8CFF6168C /* JDGistsListInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListInteractorOutput.h; sourceTree = "<group>"; };
+		058A08DE965EC208103AA407 /* JDCommitListAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDCommitListAssembly.m; sourceTree = "<group>"; };
+		084CC9A59E952B1067D1A89B /* JDCommitListModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListModuleInput.h; sourceTree = "<group>"; };
+		089C9C23C094338AEB61002D /* JDUsersHeaderAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDUsersHeaderAssembly.m; sourceTree = "<group>"; };
+		0CEFF86130431F3B8D45C589 /* JDUsersHeaderRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderRouter.h; sourceTree = "<group>"; };
+		0E4559FCAD677C7B8CFD6101 /* JDGistsListViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListViewOutput.h; sourceTree = "<group>"; };
+		17E1EEF39C88CC297C29A000 /* JDGistsListInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListInteractorInput.h; sourceTree = "<group>"; };
+		184E50A82B068731B1428CB0 /* JDGistsListRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListRouter.h; sourceTree = "<group>"; };
+		1BCEE8C278F3B7A2C2968B34 /* JDFilesListAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesListAssembly.m; sourceTree = "<group>"; };
+		1DD0D92BF039AD5D1DD61053 /* JDFilesListModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListModuleInput.h; sourceTree = "<group>"; };
+		1F2358EF601C6D07810B3881 /* JDFilesDetailPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesDetailPresenter.m; sourceTree = "<group>"; };
+		1FE40D71F0E1B85025ACAF3C /* JDFilesListPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListPresenter.h; sourceTree = "<group>"; };
+		21074F3166A3BA8584C677D7 /* JDGistDetailInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailInteractorInput.h; sourceTree = "<group>"; };
+		21D407FE059EBFB0356B68C1 /* JDCommitListPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDCommitListPresenter.m; sourceTree = "<group>"; };
+		2490F7A3788245EA2C8B5E78 /* JDFilesDetailPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailPresenter.h; sourceTree = "<group>"; };
+		251F96EFF13B0CD046ECD187 /* JDGistsListPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListPresenter.h; sourceTree = "<group>"; };
+		2A1B48E5A634FD3D371644A3 /* JDFilesDetailInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailInteractorInput.h; sourceTree = "<group>"; };
+		2B59FA354F564966F33A27C7 /* JDFilesListInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesListInteractor.m; sourceTree = "<group>"; };
+		38494871528467852822935A /* JDFilesListRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListRouter.h; sourceTree = "<group>"; };
+		3EEA1CA8CA9652DC46F31B71 /* JDFilesDetailAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailAssembly.h; sourceTree = "<group>"; };
+		3F764CF1114A2D7B09A33584 /* JDFilesListInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListInteractor.h; sourceTree = "<group>"; };
+		40971C058B8FA74DE5D528E2 /* JDUsersHeaderInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderInteractorOutput.h; sourceTree = "<group>"; };
+		444192248F251A00AA00FF76 /* JDGistDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistDetailViewController.m; sourceTree = "<group>"; };
+		46C70220C77E6AC9887E4533 /* JDGistDetailViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailViewInput.h; sourceTree = "<group>"; };
+		4A3872D764C5796DB36BA5F6 /* JDFilesListRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesListRouter.m; sourceTree = "<group>"; };
+		4C62398D905E3E6AE59EA70E /* JDGistDetailInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailInteractor.h; sourceTree = "<group>"; };
+		4FB6148BCE846E6243E66FC2 /* JDUsersHeaderInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderInteractor.h; sourceTree = "<group>"; };
+		4FFF7F9223A2EE05F9BD0A83 /* JDFilesDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesDetailViewController.m; sourceTree = "<group>"; };
+		51E23A66C1BB112E845006C4 /* JDGistsListRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListRouterInput.h; sourceTree = "<group>"; };
+		54438D900A837456FA85D1B0 /* JDGistsListAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListAssembly.h; sourceTree = "<group>"; };
+		568626B6A380AEB724B38709 /* JDGistDetailRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailRouter.h; sourceTree = "<group>"; };
+		59C294505AE51CE63B4EAB3E /* JDCommitListViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListViewOutput.h; sourceTree = "<group>"; };
+		5EF7E81D9403D9E68EF37A00 /* JDCommitListRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListRouter.h; sourceTree = "<group>"; };
+		5FD2892E76BE2F3239CB0A65 /* JDCommitListViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListViewInput.h; sourceTree = "<group>"; };
+		646CF3410BF052B29DBD7FF3 /* JDGistsListViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListViewInput.h; sourceTree = "<group>"; };
+		6AA0E45B4AF1D50442361CD0 /* JDFilesDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailViewController.h; sourceTree = "<group>"; };
+		6E744EA61B2EBE9C895BD32A /* JDFilesDetailInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailInteractor.h; sourceTree = "<group>"; };
+		774D9457C7B7A1F8178910AC /* JDGistsListInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistsListInteractor.m; sourceTree = "<group>"; };
+		782922559D638821C5DB35D8 /* libPods-GistsViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GistsViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		785717269EEC165D690A610D /* JDUsersHeaderViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderViewOutput.h; sourceTree = "<group>"; };
+		7890D82D1E162959C4DB2928 /* JDFilesDetailViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailViewInput.h; sourceTree = "<group>"; };
+		78FB023434568B5345CBF8EC /* JDGistDetailAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailAssembly.h; sourceTree = "<group>"; };
+		7B67F9E0B2C12C2811B973E7 /* JDCommitListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDCommitListViewController.m; sourceTree = "<group>"; };
+		7DE6863DF30261249786E9D3 /* JDUsersHeaderRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderRouterInput.h; sourceTree = "<group>"; };
+		7E05DF9346FDBFD104149216 /* JDUsersHeaderAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderAssembly.h; sourceTree = "<group>"; };
+		7EB82BB10129FCDC988B66B0 /* JDFilesListAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListAssembly.h; sourceTree = "<group>"; };
+		831EA709288691396667E9FF /* JDUsersHeaderInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDUsersHeaderInteractor.m; sourceTree = "<group>"; };
+		83DE24CC1DFF3BE37675AD0B /* JDGistsListAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistsListAssembly.m; sourceTree = "<group>"; };
+		85C3B81541E11260C461F402 /* JDCommitListRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDCommitListRouter.m; sourceTree = "<group>"; };
+		87147C2036EADE7CCB352712 /* JDFilesDetailInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailInteractorOutput.h; sourceTree = "<group>"; };
+		87150A2FA1AD76CDB89BEFBE /* JDFilesListInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListInteractorOutput.h; sourceTree = "<group>"; };
+		88FC1398D7DCEAC918C15F17 /* JDCommitListRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListRouterInput.h; sourceTree = "<group>"; };
+		8C0B4520206A1AB000FA006B /* JDGistsListModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGistsListModuleOutput.h; sourceTree = "<group>"; };
+		8C0B4522206A1EC000FA006B /* JDGistsListModuleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGistsListModuleFactory.h; sourceTree = "<group>"; };
+		8C0B4523206A22AC00FA006B /* JDUsersHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDUsersHeaderViewController.xib; sourceTree = "<group>"; };
+		8C0B4525206A230D00FA006B /* JDUsersHeaderModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderModuleOutput.h; sourceTree = "<group>"; };
+		8C0B4526206A23F800FA006B /* JDUsersHeaderModuleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderModuleFactory.h; sourceTree = "<group>"; };
+		8C50CE96206CBB89003B8B07 /* Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		8C50CE99206E035C003B8B07 /* JDCommitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCommitCell.h; sourceTree = "<group>"; };
+		8C50CE9A206E035C003B8B07 /* JDCommitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCommitCell.m; sourceTree = "<group>"; };
+		8C50CE9B206E035C003B8B07 /* JDCommitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDCommitCell.xib; sourceTree = "<group>"; };
+		8C50CE9E206E06C7003B8B07 /* JDTableView+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDTableView+Utils.h"; sourceTree = "<group>"; };
+		8C50CE9F206E06C7003B8B07 /* JDTableView+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JDTableView+Utils.m"; sourceTree = "<group>"; };
+		8C50CEA4206E07D2003B8B07 /* JDCommitListModuleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCommitListModuleFactory.h; sourceTree = "<group>"; };
+		8C50CEA5206E0D82003B8B07 /* JDFilesListModuleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFilesListModuleFactory.h; sourceTree = "<group>"; };
+		8C50CEA6206E0F90003B8B07 /* ForksListResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForksListResponseObject.h; sourceTree = "<group>"; };
+		8C50CEA7206E0F90003B8B07 /* ForksListResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForksListResponseObject.m; sourceTree = "<group>"; };
+		8C50CEA9206E1109003B8B07 /* FilesListResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilesListResponseObject.h; sourceTree = "<group>"; };
+		8C50CEAA206E1109003B8B07 /* FilesListResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilesListResponseObject.m; sourceTree = "<group>"; };
+		8C5B8DFA20640D8400CEF3BC /* JDGist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGist.h; sourceTree = "<group>"; };
+		8C5B8DFB20640D8400CEF3BC /* JDGist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDGist.m; sourceTree = "<group>"; };
+		8C5B8DFE20640DA600CEF3BC /* Gists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gists.xcdatamodel; sourceTree = "<group>"; };
+		8C5B8E1C2064122900CEF3BC /* GistsListResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GistsListResponseObject.h; sourceTree = "<group>"; };
+		8C5B8E1D2064122900CEF3BC /* GistsListResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GistsListResponseObject.m; sourceTree = "<group>"; };
+		8C5B8E1F2064160800CEF3BC /* PONSOConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PONSOConverter.h; sourceTree = "<group>"; };
+		8C5B8E202064161700CEF3BC /* PONSOConverterImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PONSOConverterImplementation.h; sourceTree = "<group>"; };
+		8C5B8E212064161700CEF3BC /* PONSOConverterImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONSOConverterImplementation.m; sourceTree = "<group>"; };
+		8C5B8E23206A168200CEF3BC /* JDUsersService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDUsersService.h; sourceTree = "<group>"; };
+		8C5B8E25206A169C00CEF3BC /* JDUsersServiceImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDUsersServiceImplementation.h; sourceTree = "<group>"; };
+		8C5B8E26206A169C00CEF3BC /* JDUsersServiceImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDUsersServiceImplementation.m; sourceTree = "<group>"; };
+		8C5B8E29206A16BF00CEF3BC /* JDUsersServiceAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDUsersServiceAssembly.h; sourceTree = "<group>"; };
+		8C5B8E2A206A16BF00CEF3BC /* JDUsersServiceAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDUsersServiceAssembly.m; sourceTree = "<group>"; };
+		8C64CE0E206B62590002AF0A /* UIColor+JD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JD.h"; sourceTree = "<group>"; };
+		8C64CE0F206B62590002AF0A /* UIColor+JD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JD.m"; sourceTree = "<group>"; };
+		8C64CE11206B63AC0002AF0A /* UIViewController+JD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JD.h"; sourceTree = "<group>"; };
+		8C64CE12206B63AC0002AF0A /* UIViewController+JD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JD.m"; sourceTree = "<group>"; };
+		8C64CE14206B64370002AF0A /* JDRetryStubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDRetryStubView.h; sourceTree = "<group>"; };
+		8C64CE15206B64370002AF0A /* JDRetryStubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDRetryStubView.m; sourceTree = "<group>"; };
+		8C64CE17206B64620002AF0A /* JDRetryStubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDRetryStubView.xib; sourceTree = "<group>"; };
+		8C64CE19206B65150002AF0A /* UIView+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		8C64CE1A206B65150002AF0A /* UIView+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		8C6FA577206AD49200DF42C1 /* JDGistDetailModuleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGistDetailModuleFactory.h; sourceTree = "<group>"; };
+		8C6FA581206AD5E500DF42C1 /* JDGistDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDGistDetailHeaderView.xib; sourceTree = "<group>"; };
+		8C6FA583206AD8F700DF42C1 /* JDGistDetailHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGistDetailHeaderView.h; sourceTree = "<group>"; };
+		8C6FA584206AD8F700DF42C1 /* JDGistDetailHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDGistDetailHeaderView.m; sourceTree = "<group>"; };
+		8CF07904206C238400B86DD5 /* File+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "File+CoreDataProperties.m"; sourceTree = "<group>"; };
+		957B2FFAE04AEC10770D20A6 /* JDUsersHeaderViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderViewInput.h; sourceTree = "<group>"; };
+		980A4BED056E5BA15676D2DE /* JDCommitListInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListInteractorOutput.h; sourceTree = "<group>"; };
+		9AEFAFD14C38AE788676AA6E /* JDGistDetailInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistDetailInteractor.m; sourceTree = "<group>"; };
+		9BDAD6CBFD3E0E80805FFC51 /* JDCommitListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListViewController.h; sourceTree = "<group>"; };
+		9E3282BE0837DD0AB0C1F67F /* JDUsersHeaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDUsersHeaderViewController.m; sourceTree = "<group>"; };
+		A0127981BCB638F5AAD0B80C /* JDGistDetailInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailInteractorOutput.h; sourceTree = "<group>"; };
+		A0BF9A9378E06F0DD25C98D2 /* JDUsersHeaderModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderModuleInput.h; sourceTree = "<group>"; };
+		A17CA6880C8BD1EF2188459B /* JDCommitListInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListInteractorInput.h; sourceTree = "<group>"; };
+		A8B1DF041AE232839044ABA9 /* JDFilesListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListViewController.h; sourceTree = "<group>"; };
+		A9B0E6F48B61C6F515A78E80 /* JDFilesDetailRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailRouter.h; sourceTree = "<group>"; };
+		B0E13720F77DEC13994FCBB5 /* JDGistsListModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListModuleInput.h; sourceTree = "<group>"; };
+		B25FAA259E7F6D1E6F878659 /* JDGistDetailViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailViewOutput.h; sourceTree = "<group>"; };
+		B4D7600A7E3A97CF56C0C0C1 /* JDGistsListPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistsListPresenter.m; sourceTree = "<group>"; };
+		B50E1F9992C91B9385F0B945 /* JDUsersHeaderRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDUsersHeaderRouter.m; sourceTree = "<group>"; };
+		BB09DD0702C7907D12A25B9A /* JDFilesDetailModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailModuleInput.h; sourceTree = "<group>"; };
+		BCDD8C22F761826555C46E30 /* JDFilesListPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesListPresenter.m; sourceTree = "<group>"; };
+		BE7F44E5A85060543740757E /* JDGistsListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistsListViewController.m; sourceTree = "<group>"; };
+		C325715C22E9CE5FB7F11523 /* JDCommitListAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListAssembly.h; sourceTree = "<group>"; };
+		C40B114435149289F49D7ECA /* JDFilesListInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListInteractorInput.h; sourceTree = "<group>"; };
+		C59B70AABA503BC85CB016A2 /* JDUsersHeaderPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderPresenter.h; sourceTree = "<group>"; };
+		CB496CDE951DD0C33244EABB /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		D15F73530BD579C357F2CAA5 /* JDFilesDetailAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesDetailAssembly.m; sourceTree = "<group>"; };
+		D1F4EFD8757E837B30090DB1 /* JDGistDetailAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistDetailAssembly.m; sourceTree = "<group>"; };
+		D224020EDDC9983FE44ACDB6 /* JDGistDetailRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailRouterInput.h; sourceTree = "<group>"; };
+		D8AF0D4508F726C3916F7658 /* JDFilesListViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListViewInput.h; sourceTree = "<group>"; };
+		D94F21AA0A25CF399163D117 /* JDFilesDetailInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesDetailInteractor.m; sourceTree = "<group>"; };
+		DA2942D6EF522D69A36D23CD /* Pods-GistsViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.release.xcconfig"; sourceTree = "<group>"; };
+		DBB24FD68CD2E7B9C753BBF1 /* JDGistDetailPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailPresenter.h; sourceTree = "<group>"; };
+		DC056FB34018D21973910D8D /* JDFilesListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesListViewController.m; sourceTree = "<group>"; };
+		DD6D7C478C4F9BC2D8D6F561 /* JDGistsListRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistsListRouter.m; sourceTree = "<group>"; };
+		DE08E1ED845DD95A2B931FA8 /* JDFilesDetailRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailRouterInput.h; sourceTree = "<group>"; };
+		DE100B0A2DDE18B145ECCEA3 /* JDGistDetailModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailModuleInput.h; sourceTree = "<group>"; };
+		DEE73356CC685087EDFD7EA2 /* JDGistsListInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistsListInteractor.h; sourceTree = "<group>"; };
+		E259CDDF1F25B4AFDAD81AE5 /* JDCommitListInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDCommitListInteractor.m; sourceTree = "<group>"; };
+		E8AA65C55B2C492A543EB13D /* JDFilesDetailViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailViewOutput.h; sourceTree = "<group>"; };
+		EA1AB3A2B3B9D02DBEADDC2F /* JDFilesDetailRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDFilesDetailRouter.m; sourceTree = "<group>"; };
+		EC14155133241CCD2EF49AA8 /* JDCommitListInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListInteractor.h; sourceTree = "<group>"; };
+		EF0BD3C7455C041764C43E74 /* JDUsersHeaderInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderInteractorInput.h; sourceTree = "<group>"; };
+		EF97315CEFE2733BE8303C07 /* JDFilesListRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListRouterInput.h; sourceTree = "<group>"; };
+		F0B3C818C20F9DDBFD81307F /* JDCommitListPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDCommitListPresenter.h; sourceTree = "<group>"; };
+		F3012C30206BB45100006BA0 /* JDGistDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGistDetailCell.h; sourceTree = "<group>"; };
+		F3012C31206BB45100006BA0 /* JDGistDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDGistDetailCell.m; sourceTree = "<group>"; };
+		F3012C33206BB45C00006BA0 /* JDGistDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDGistDetailCell.xib; sourceTree = "<group>"; };
+		F3012C35206BB6D100006BA0 /* JDFileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFileCell.h; sourceTree = "<group>"; };
+		F3012C36206BB6D100006BA0 /* JDFileCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFileCell.m; sourceTree = "<group>"; };
+		F3012C37206BB6D100006BA0 /* JDFileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDFileCell.xib; sourceTree = "<group>"; };
+		F3012C3B206CD26100006BA0 /* Popup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Popup.xib; sourceTree = "<group>"; };
+		F3012C3C206CD26100006BA0 /* Popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Popup.h; sourceTree = "<group>"; };
+		F3012C3D206CD26200006BA0 /* Popup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Popup.m; sourceTree = "<group>"; };
+		F3012C40206CE66700006BA0 /* JDResponseConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDResponseConverter.h; sourceTree = "<group>"; };
+		F3012C43206CE68600006BA0 /* JDResponseConverterImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDResponseConverterImplementation.h; sourceTree = "<group>"; };
+		F3012C44206CE68600006BA0 /* JDResponseConverterImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDResponseConverterImplementation.m; sourceTree = "<group>"; };
+		F3012C48206CE8C200006BA0 /* JDResponseConverterAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDResponseConverterAssembly.h; sourceTree = "<group>"; };
+		F3012C49206CE8C200006BA0 /* JDResponseConverterAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDResponseConverterAssembly.m; sourceTree = "<group>"; };
+		F3012C4C206CE92A00006BA0 /* JDCoreDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCoreDataService.h; sourceTree = "<group>"; };
+		F3012C4D206CE94400006BA0 /* JDCoreDataServiceImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCoreDataServiceImplementation.h; sourceTree = "<group>"; };
+		F3012C4E206CE94400006BA0 /* JDCoreDataServiceImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCoreDataServiceImplementation.m; sourceTree = "<group>"; };
+		F3012C51206CE95F00006BA0 /* JDCoreDataServiceAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCoreDataServiceAssembly.h; sourceTree = "<group>"; };
+		F3012C52206CE95F00006BA0 /* JDCoreDataServiceAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCoreDataServiceAssembly.m; sourceTree = "<group>"; };
+		F3012C55206CF3A100006BA0 /* JDRelation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDRelation.h; sourceTree = "<group>"; };
+		F3012C56206CF3A100006BA0 /* JDRelation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDRelation.m; sourceTree = "<group>"; };
+		F358C874206A4264002F97FE /* JDUsersHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderCell.h; sourceTree = "<group>"; };
+		F358C875206A4264002F97FE /* JDUsersHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDUsersHeaderCell.m; sourceTree = "<group>"; };
+		F358C877206A4270002F97FE /* JDUsersHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDUsersHeaderCell.xib; sourceTree = "<group>"; };
+		F3AC0C39206D1E8D0091C0A7 /* Commit+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Commit+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F3AC0C3C206D1E8D0091C0A7 /* Commit+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Commit+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F3AC0C3F206D1EDA0091C0A7 /* JDCommit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCommit.h; sourceTree = "<group>"; };
+		F3AC0C40206D1EDA0091C0A7 /* JDCommit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCommit.m; sourceTree = "<group>"; };
+		F3AC0C42206D26380091C0A7 /* CommitListResponseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitListResponseObject.h; sourceTree = "<group>"; };
+		F3AC0C43206D26380091C0A7 /* CommitListResponseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitListResponseObject.m; sourceTree = "<group>"; };
+		F3BE896FBB6FA51D7B35F8DB /* JDUsersHeaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderViewController.h; sourceTree = "<group>"; };
 		F3C0CBC3205BED7F00658F75 /* GistsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3C0CBC6205BED7F00658F75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F3C0CBC7205BED7F00658F75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F3C0CBC9205BED7F00658F75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3C0CBCA205BED7F00658F75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F3C0CBCD205BED7F00658F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3C0CBCF205BED7F00658F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3C0CBD2205BED7F00658F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F3C0CBD4205BED7F00658F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3C0CBD5205BED7F00658F75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3D77B2E206E34790054099B /* JDFilesDetailModuleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFilesDetailModuleFactory.h; sourceTree = "<group>"; };
+		F3D77B2F206E3E510054099B /* GistsViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GistsViewer-Prefix.pch"; sourceTree = "<group>"; };
+		F3EA48D320628E18003695C7 /* JDGistsServiceAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGistsServiceAssembly.m; sourceTree = "<group>"; };
+		F3EA48D420628E18003695C7 /* JDGistsServiceAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGistsServiceAssembly.h; sourceTree = "<group>"; };
+		F3EA48D620628E18003695C7 /* JDGistsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGistsService.h; sourceTree = "<group>"; };
+		F3EA48D720628E18003695C7 /* JDGistsServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGistsServiceImplementation.m; sourceTree = "<group>"; };
+		F3EA48D820628E18003695C7 /* JDGistsServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGistsServiceImplementation.h; sourceTree = "<group>"; };
+		F3EA48DB20628E18003695C7 /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
+		F3EA48DC20628E18003695C7 /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
+		F3EA48DE20628E18003695C7 /* ApplicationCoordinatorImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinatorImplementation.h; sourceTree = "<group>"; };
+		F3EA48DF20628E18003695C7 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
+		F3EA48E020628E18003695C7 /* ApplicationCoordinatorImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinatorImplementation.m; sourceTree = "<group>"; };
+		F3EA48E220628E18003695C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3EA48E320628E18003695C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3EA48E720628E18003695C7 /* JDDashboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDashboardAssembly.m; sourceTree = "<group>"; };
+		F3EA48E820628E18003695C7 /* JDDashboardModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardModuleFactory.h; sourceTree = "<group>"; };
+		F3EA48E920628E18003695C7 /* JDDashboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardAssembly.h; sourceTree = "<group>"; };
+		F3EA48EB20628E18003695C7 /* JDDashboardPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardPresenter.h; sourceTree = "<group>"; };
+		F3EA48EC20628E18003695C7 /* JDDashboardModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardModuleInput.h; sourceTree = "<group>"; };
+		F3EA48ED20628E18003695C7 /* JDDashboardPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDashboardPresenter.m; sourceTree = "<group>"; };
+		F3EA48EF20628E18003695C7 /* JDDashboardViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardViewInput.h; sourceTree = "<group>"; };
+		F3EA48F020628E18003695C7 /* JDDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDashboardViewController.m; sourceTree = "<group>"; };
+		F3EA48F220628E18003695C7 /* JDDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardViewController.h; sourceTree = "<group>"; };
+		F3EA48F320628E18003695C7 /* JDDashboardViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardViewOutput.h; sourceTree = "<group>"; };
+		F3EA48F520628E18003695C7 /* JDDashboardInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDashboardInteractor.m; sourceTree = "<group>"; };
+		F3EA48F620628E18003695C7 /* JDDashboardInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardInteractorInput.h; sourceTree = "<group>"; };
+		F3EA48F720628E18003695C7 /* JDDashboardInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardInteractor.h; sourceTree = "<group>"; };
+		F3EA48F820628E18003695C7 /* JDDashboardInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardInteractorOutput.h; sourceTree = "<group>"; };
+		F3EA48FA20628E18003695C7 /* JDDashboardRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardRouter.h; sourceTree = "<group>"; };
+		F3EA48FB20628E18003695C7 /* JDDashboardRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDashboardRouterInput.h; sourceTree = "<group>"; };
+		F3EA48FC20628E18003695C7 /* JDDashboardRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDashboardRouter.m; sourceTree = "<group>"; };
+		F3EA48FE20628E18003695C7 /* JDRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRoutes.m; sourceTree = "<group>"; };
+		F3EA490120628E18003695C7 /* APIAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIAssembly.h; sourceTree = "<group>"; };
+		F3EA490220628E18003695C7 /* APIAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIAssembly.m; sourceTree = "<group>"; };
+		F3EA490420628E18003695C7 /* APIImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIImplementation.m; sourceTree = "<group>"; };
+		F3EA490520628E18003695C7 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		F3EA490620628E18003695C7 /* APIImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIImplementation.h; sourceTree = "<group>"; };
+		F3EA490720628E18003695C7 /* JDRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRoutes.h; sourceTree = "<group>"; };
+		F3EA492020628E9B003695C7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3EA492320628E9B003695C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3EA492420628E9B003695C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3EA492520628E9B003695C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3EA495B2064D40B003695C7 /* NSArray+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utils.h"; sourceTree = "<group>"; };
+		F3EA495C2064D40B003695C7 /* NSArray+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
+		F3EA49602064D8AD003695C7 /* PONSOConverterAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PONSOConverterAssembly.h; sourceTree = "<group>"; };
+		F3EA49612064D8AD003695C7 /* PONSOConverterAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONSOConverterAssembly.m; sourceTree = "<group>"; };
+		F3EA49642064E213003695C7 /* JDOwner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDOwner.h; sourceTree = "<group>"; };
+		F3EA49652064E213003695C7 /* JDOwner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDOwner.m; sourceTree = "<group>"; };
+		F3EA49672064E51D003695C7 /* JDFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFile.h; sourceTree = "<group>"; };
+		F3EA49682064E51D003695C7 /* JDFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFile.m; sourceTree = "<group>"; };
+		F3EB4A90712F9741E3DCF696 /* JDUsersHeaderPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDUsersHeaderPresenter.m; sourceTree = "<group>"; };
+		F3ECCCAB206529DC00CB82D5 /* File+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "File+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F3ECCCAC206529DC00CB82D5 /* File+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "File+CoreDataClass.h"; sourceTree = "<group>"; };
+		F3ECCCAD206529DC00CB82D5 /* File+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "File+CoreDataClass.m"; sourceTree = "<group>"; };
+		F3ECCCAF206529DC00CB82D5 /* Gist+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gist+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F3ECCCB0206529DC00CB82D5 /* Gist+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gist+CoreDataClass.h"; sourceTree = "<group>"; };
+		F3ECCCB1206529DC00CB82D5 /* Gist+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Gist+CoreDataClass.m"; sourceTree = "<group>"; };
+		F3ECCCB2206529DC00CB82D5 /* Gist+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Gist+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F3ECCCB3206529DC00CB82D5 /* Owner+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Owner+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F3ECCCB4206529DC00CB82D5 /* Owner+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Owner+CoreDataClass.h"; sourceTree = "<group>"; };
+		F3ECCCB5206529DC00CB82D5 /* Owner+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Owner+CoreDataClass.m"; sourceTree = "<group>"; };
+		F3ECCCB6206529DC00CB82D5 /* Owner+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Owner+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F3ECCCBD2069175000CB82D5 /* JDGistCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGistCell.h; sourceTree = "<group>"; };
+		F3ECCCBE2069175000CB82D5 /* JDGistCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDGistCell.m; sourceTree = "<group>"; };
+		F3ECCCBF2069175000CB82D5 /* JDGistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDGistCell.xib; sourceTree = "<group>"; };
+		F3ECCCC220691CDB00CB82D5 /* JDTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTableViewController.h; sourceTree = "<group>"; };
+		F3ECCCC320691CDB00CB82D5 /* JDTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDTableViewController.m; sourceTree = "<group>"; };
+		F3ECCCCC2069212000CB82D5 /* JDTableSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTableSection.h; sourceTree = "<group>"; };
+		F3ECCCCD2069212000CB82D5 /* JDTableSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDTableSection.m; sourceTree = "<group>"; };
+		F3ECCCCF2069213300CB82D5 /* JDTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTableCell.h; sourceTree = "<group>"; };
+		F3ECCCD02069213300CB82D5 /* JDTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDTableCell.m; sourceTree = "<group>"; };
+		F3ECCCD22069241600CB82D5 /* JDTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTableView.h; sourceTree = "<group>"; };
+		F3ECCCD32069241600CB82D5 /* JDTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDTableView.m; sourceTree = "<group>"; };
+		F7B4D46D6F40CF5736DC18C9 /* JDGistDetailRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistDetailRouter.m; sourceTree = "<group>"; };
+		FB946A5BD7AB49396AAFDDBB /* JDGistDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDGistDetailViewController.h; sourceTree = "<group>"; };
+		FF6191D0499023E5246BBBCF /* JDFilesListViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFilesListViewOutput.h; sourceTree = "<group>"; };
+		FFEE738221F4448AAC798174 /* JDGistDetailPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDGistDetailPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +357,645 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0F50512DEECE233A9192A7 /* libPods-GistsViewer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008426E47652DD4E3304158F /* GistsList */ = {
+			isa = PBXGroup;
+			children = (
+				82E1C6730085E85CB966E8B7 /* Assembly */,
+				21393A636D6CA19F21F0FF86 /* View */,
+				287FF9F39F518331F1FCA5DB /* Presenter */,
+				A0350C3FBBB0B8D5260C612E /* Interactor */,
+				F51D84C51AA093B89739E673 /* Router */,
+			);
+			path = GistsList;
+			sourceTree = "<group>";
+		};
+		0142F2D7C01D706EEF8236EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				782922559D638821C5DB35D8 /* libPods-GistsViewer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		053244D54D0B6AC105D1BCA3 /* CommitList */ = {
+			isa = PBXGroup;
+			children = (
+				C85904A0683C9C969ABD2B75 /* Assembly */,
+				91F1034717B7BAE758CFE2BC /* View */,
+				BD394EFE35F994138BABE65C /* Presenter */,
+				309378EED00ACD2EBAD2E7EB /* Interactor */,
+				BF29EA8EDDDCEEB7383A77D7 /* Router */,
+			);
+			path = CommitList;
+			sourceTree = "<group>";
+		};
+		1692E81C3E9DA38A1EBFD38F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46C70220C77E6AC9887E4533 /* JDGistDetailViewInput.h */,
+				B25FAA259E7F6D1E6F878659 /* JDGistDetailViewOutput.h */,
+				FB946A5BD7AB49396AAFDDBB /* JDGistDetailViewController.h */,
+				444192248F251A00AA00FF76 /* JDGistDetailViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2025F756124E401D9B8019BB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C40B114435149289F49D7ECA /* JDFilesListInteractorInput.h */,
+				87150A2FA1AD76CDB89BEFBE /* JDFilesListInteractorOutput.h */,
+				3F764CF1114A2D7B09A33584 /* JDFilesListInteractor.h */,
+				2B59FA354F564966F33A27C7 /* JDFilesListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		21393A636D6CA19F21F0FF86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				646CF3410BF052B29DBD7FF3 /* JDGistsListViewInput.h */,
+				0E4559FCAD677C7B8CFD6101 /* JDGistsListViewOutput.h */,
+				01BED2379972D1D1FABDBC25 /* JDGistsListViewController.h */,
+				BE7F44E5A85060543740757E /* JDGistsListViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		285B685413A2FB540849F0CA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BD3C7455C041764C43E74 /* JDUsersHeaderInteractorInput.h */,
+				40971C058B8FA74DE5D528E2 /* JDUsersHeaderInteractorOutput.h */,
+				4FB6148BCE846E6243E66FC2 /* JDUsersHeaderInteractor.h */,
+				831EA709288691396667E9FF /* JDUsersHeaderInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		287FF9F39F518331F1FCA5DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C0B4520206A1AB000FA006B /* JDGistsListModuleOutput.h */,
+				B0E13720F77DEC13994FCBB5 /* JDGistsListModuleInput.h */,
+				251F96EFF13B0CD046ECD187 /* JDGistsListPresenter.h */,
+				B4D7600A7E3A97CF56C0C0C1 /* JDGistsListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		309378EED00ACD2EBAD2E7EB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A17CA6880C8BD1EF2188459B /* JDCommitListInteractorInput.h */,
+				980A4BED056E5BA15676D2DE /* JDCommitListInteractorOutput.h */,
+				EC14155133241CCD2EF49AA8 /* JDCommitListInteractor.h */,
+				E259CDDF1F25B4AFDAD81AE5 /* JDCommitListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		36CBEFE5E8F732391FB67BCC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1DD0D92BF039AD5D1DD61053 /* JDFilesListModuleInput.h */,
+				1FE40D71F0E1B85025ACAF3C /* JDFilesListPresenter.h */,
+				BCDD8C22F761826555C46E30 /* JDFilesListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3A9C2569908D2C221FA2EA0A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8C6FA577206AD49200DF42C1 /* JDGistDetailModuleFactory.h */,
+				78FB023434568B5345CBF8EC /* JDGistDetailAssembly.h */,
+				D1F4EFD8757E837B30090DB1 /* JDGistDetailAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3BAF93FB2EE75D55B43BBBC7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7DE6863DF30261249786E9D3 /* JDUsersHeaderRouterInput.h */,
+				0CEFF86130431F3B8D45C589 /* JDUsersHeaderRouter.h */,
+				B50E1F9992C91B9385F0B945 /* JDUsersHeaderRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		428A0EDE3FBFD6950437E83E /* GistDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3A9C2569908D2C221FA2EA0A /* Assembly */,
+				1692E81C3E9DA38A1EBFD38F /* View */,
+				9B65B15AE6FDE4A44A361E87 /* Presenter */,
+				EC26853C2DD2E2C983072D5D /* Interactor */,
+				B2F723E88C1DC8238DA43D75 /* Router */,
+			);
+			path = GistDetail;
+			sourceTree = "<group>";
+		};
+		5535C580F19E6779B6A3557D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				7EB82BB10129FCDC988B66B0 /* JDFilesListAssembly.h */,
+				1BCEE8C278F3B7A2C2968B34 /* JDFilesListAssembly.m */,
+				8C50CEA5206E0D82003B8B07 /* JDFilesListModuleFactory.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		69CDFA68C381AF663190A4E4 /* FilesList */ = {
+			isa = PBXGroup;
+			children = (
+				5535C580F19E6779B6A3557D /* Assembly */,
+				6A5FEAAF1CA6C1C8B89167AB /* View */,
+				36CBEFE5E8F732391FB67BCC /* Presenter */,
+				2025F756124E401D9B8019BB /* Interactor */,
+				AA7A4352A49349E6145764CD /* Router */,
+			);
+			path = FilesList;
+			sourceTree = "<group>";
+		};
+		6A5FEAAF1CA6C1C8B89167AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8AF0D4508F726C3916F7658 /* JDFilesListViewInput.h */,
+				FF6191D0499023E5246BBBCF /* JDFilesListViewOutput.h */,
+				A8B1DF041AE232839044ABA9 /* JDFilesListViewController.h */,
+				DC056FB34018D21973910D8D /* JDFilesListViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A65F3693A3ED466E10ACB28 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3EEA1CA8CA9652DC46F31B71 /* JDFilesDetailAssembly.h */,
+				D15F73530BD579C357F2CAA5 /* JDFilesDetailAssembly.m */,
+				F3D77B2E206E34790054099B /* JDFilesDetailModuleFactory.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		82E1C6730085E85CB966E8B7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8C0B4522206A1EC000FA006B /* JDGistsListModuleFactory.h */,
+				54438D900A837456FA85D1B0 /* JDGistsListAssembly.h */,
+				83DE24CC1DFF3BE37675AD0B /* JDGistsListAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		8C5B8DD02064070A00CEF3BC /* GistsService */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48D620628E18003695C7 /* JDGistsService.h */,
+				F3EA48D820628E18003695C7 /* JDGistsServiceImplementation.h */,
+				F3EA48D720628E18003695C7 /* JDGistsServiceImplementation.m */,
+			);
+			path = GistsService;
+			sourceTree = "<group>";
+		};
+		8C5B8E0C20640ED500CEF3BC /* Managed */ = {
+			isa = PBXGroup;
+			children = (
+				F3AC0C39206D1E8D0091C0A7 /* Commit+CoreDataProperties.h */,
+				F3AC0C3C206D1E8D0091C0A7 /* Commit+CoreDataProperties.m */,
+				F3ECCCAB206529DC00CB82D5 /* File+CoreDataProperties.h */,
+				F3ECCCAC206529DC00CB82D5 /* File+CoreDataClass.h */,
+				F3ECCCAD206529DC00CB82D5 /* File+CoreDataClass.m */,
+				8CF07904206C238400B86DD5 /* File+CoreDataProperties.m */,
+				F3ECCCAF206529DC00CB82D5 /* Gist+CoreDataProperties.h */,
+				F3ECCCB0206529DC00CB82D5 /* Gist+CoreDataClass.h */,
+				F3ECCCB1206529DC00CB82D5 /* Gist+CoreDataClass.m */,
+				F3ECCCB2206529DC00CB82D5 /* Gist+CoreDataProperties.m */,
+				F3ECCCB3206529DC00CB82D5 /* Owner+CoreDataProperties.h */,
+				F3ECCCB4206529DC00CB82D5 /* Owner+CoreDataClass.h */,
+				F3ECCCB5206529DC00CB82D5 /* Owner+CoreDataClass.m */,
+				F3ECCCB6206529DC00CB82D5 /* Owner+CoreDataProperties.m */,
+			);
+			path = Managed;
+			sourceTree = "<group>";
+		};
+		8C5B8E0D20640EDE00CEF3BC /* PlainsOld */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA49642064E213003695C7 /* JDOwner.h */,
+				F3EA49652064E213003695C7 /* JDOwner.m */,
+				F3EA49672064E51D003695C7 /* JDFile.h */,
+				F3EA49682064E51D003695C7 /* JDFile.m */,
+				8C5B8DFA20640D8400CEF3BC /* JDGist.h */,
+				8C5B8DFB20640D8400CEF3BC /* JDGist.m */,
+				F3AC0C3F206D1EDA0091C0A7 /* JDCommit.h */,
+				F3AC0C40206D1EDA0091C0A7 /* JDCommit.m */,
+			);
+			path = PlainsOld;
+			sourceTree = "<group>";
+		};
+		8C5B8E0F20640EF300CEF3BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C55206CF3A100006BA0 /* JDRelation.h */,
+				F3012C56206CF3A100006BA0 /* JDRelation.m */,
+				8CF07903206C233D00B86DD5 /* ResponseMappings */,
+				8C5B8E0D20640EDE00CEF3BC /* PlainsOld */,
+				8C5B8E0C20640ED500CEF3BC /* Managed */,
+				8C5B8DFD20640DA600CEF3BC /* Gists.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C5B8E24206A168900CEF3BC /* UsersService */ = {
+			isa = PBXGroup;
+			children = (
+				8C5B8E23206A168200CEF3BC /* JDUsersService.h */,
+				8C5B8E25206A169C00CEF3BC /* JDUsersServiceImplementation.h */,
+				8C5B8E26206A169C00CEF3BC /* JDUsersServiceImplementation.m */,
+			);
+			path = UsersService;
+			sourceTree = "<group>";
+		};
+		8C5B8E2C206A16C400CEF3BC /* UsersAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				8C5B8E29206A16BF00CEF3BC /* JDUsersServiceAssembly.h */,
+				8C5B8E2A206A16BF00CEF3BC /* JDUsersServiceAssembly.m */,
+			);
+			path = UsersAssembly;
+			sourceTree = "<group>";
+		};
+		8C6FA578206AD54E00DF42C1 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F3ECCCC220691CDB00CB82D5 /* JDTableViewController.h */,
+				F3ECCCC320691CDB00CB82D5 /* JDTableViewController.m */,
+				F3ECCCD22069241600CB82D5 /* JDTableView.h */,
+				F3ECCCD32069241600CB82D5 /* JDTableView.m */,
+				F3ECCCCC2069212000CB82D5 /* JDTableSection.h */,
+				F3ECCCCD2069212000CB82D5 /* JDTableSection.m */,
+				F3ECCCCF2069213300CB82D5 /* JDTableCell.h */,
+				F3ECCCD02069213300CB82D5 /* JDTableCell.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		8C6FA57B206AD56C00DF42C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C3A206BB6D700006BA0 /* Cells */,
+				F3AC0C38206D00900091C0A7 /* CustomViews */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8CF07903206C233D00B86DD5 /* ResponseMappings */ = {
+			isa = PBXGroup;
+			children = (
+				8C5B8E1C2064122900CEF3BC /* GistsListResponseObject.h */,
+				8C5B8E1D2064122900CEF3BC /* GistsListResponseObject.m */,
+				F3AC0C42206D26380091C0A7 /* CommitListResponseObject.h */,
+				F3AC0C43206D26380091C0A7 /* CommitListResponseObject.m */,
+				8C50CEA6206E0F90003B8B07 /* ForksListResponseObject.h */,
+				8C50CEA7206E0F90003B8B07 /* ForksListResponseObject.m */,
+				8C50CEA9206E1109003B8B07 /* FilesListResponseObject.h */,
+				8C50CEAA206E1109003B8B07 /* FilesListResponseObject.m */,
+			);
+			path = ResponseMappings;
+			sourceTree = "<group>";
+		};
+		900650B13A565A38BEBCD2BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB496CDE951DD0C33244EABB /* Pods-GistsViewer.debug.xcconfig */,
+				DA2942D6EF522D69A36D23CD /* Pods-GistsViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		917EF6AE52C8B3F073FFF1DD /* UsersHeader */ = {
+			isa = PBXGroup;
+			children = (
+				EC6ED560351C9E2908E200C9 /* Assembly */,
+				CC16F5AD761254347E51FCE2 /* View */,
+				97EF313D200F341C60984BCD /* Presenter */,
+				285B685413A2FB540849F0CA /* Interactor */,
+				3BAF93FB2EE75D55B43BBBC7 /* Router */,
+			);
+			path = UsersHeader;
+			sourceTree = "<group>";
+		};
+		91F1034717B7BAE758CFE2BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FD2892E76BE2F3239CB0A65 /* JDCommitListViewInput.h */,
+				59C294505AE51CE63B4EAB3E /* JDCommitListViewOutput.h */,
+				9BDAD6CBFD3E0E80805FFC51 /* JDCommitListViewController.h */,
+				7B67F9E0B2C12C2811B973E7 /* JDCommitListViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93BEB0FE4987AA472669CFBB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DE08E1ED845DD95A2B931FA8 /* JDFilesDetailRouterInput.h */,
+				A9B0E6F48B61C6F515A78E80 /* JDFilesDetailRouter.h */,
+				EA1AB3A2B3B9D02DBEADDC2F /* JDFilesDetailRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		97EF313D200F341C60984BCD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C0B4525206A230D00FA006B /* JDUsersHeaderModuleOutput.h */,
+				A0BF9A9378E06F0DD25C98D2 /* JDUsersHeaderModuleInput.h */,
+				C59B70AABA503BC85CB016A2 /* JDUsersHeaderPresenter.h */,
+				F3EB4A90712F9741E3DCF696 /* JDUsersHeaderPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9879195FEF37BFF77600FA31 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BB09DD0702C7907D12A25B9A /* JDFilesDetailModuleInput.h */,
+				2490F7A3788245EA2C8B5E78 /* JDFilesDetailPresenter.h */,
+				1F2358EF601C6D07810B3881 /* JDFilesDetailPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9B65B15AE6FDE4A44A361E87 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE100B0A2DDE18B145ECCEA3 /* JDGistDetailModuleInput.h */,
+				DBB24FD68CD2E7B9C753BBF1 /* JDGistDetailPresenter.h */,
+				FFEE738221F4448AAC798174 /* JDGistDetailPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A0350C3FBBB0B8D5260C612E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				17E1EEF39C88CC297C29A000 /* JDGistsListInteractorInput.h */,
+				0208588475F2C8B8CFF6168C /* JDGistsListInteractorOutput.h */,
+				DEE73356CC685087EDFD7EA2 /* JDGistsListInteractor.h */,
+				774D9457C7B7A1F8178910AC /* JDGistsListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AA7A4352A49349E6145764CD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EF97315CEFE2733BE8303C07 /* JDFilesListRouterInput.h */,
+				38494871528467852822935A /* JDFilesListRouter.h */,
+				4A3872D764C5796DB36BA5F6 /* JDFilesListRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B2F723E88C1DC8238DA43D75 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D224020EDDC9983FE44ACDB6 /* JDGistDetailRouterInput.h */,
+				568626B6A380AEB724B38709 /* JDGistDetailRouter.h */,
+				F7B4D46D6F40CF5736DC18C9 /* JDGistDetailRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B5F49B3573AFFEEB29354A28 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B48E5A634FD3D371644A3 /* JDFilesDetailInteractorInput.h */,
+				87147C2036EADE7CCB352712 /* JDFilesDetailInteractorOutput.h */,
+				6E744EA61B2EBE9C895BD32A /* JDFilesDetailInteractor.h */,
+				D94F21AA0A25CF399163D117 /* JDFilesDetailInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD394EFE35F994138BABE65C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				084CC9A59E952B1067D1A89B /* JDCommitListModuleInput.h */,
+				F0B3C818C20F9DDBFD81307F /* JDCommitListPresenter.h */,
+				21D407FE059EBFB0356B68C1 /* JDCommitListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF29EA8EDDDCEEB7383A77D7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88FC1398D7DCEAC918C15F17 /* JDCommitListRouterInput.h */,
+				5EF7E81D9403D9E68EF37A00 /* JDCommitListRouter.h */,
+				85C3B81541E11260C461F402 /* JDCommitListRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C85904A0683C9C969ABD2B75 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C325715C22E9CE5FB7F11523 /* JDCommitListAssembly.h */,
+				058A08DE965EC208103AA407 /* JDCommitListAssembly.m */,
+				8C50CEA4206E07D2003B8B07 /* JDCommitListModuleFactory.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CC16F5AD761254347E51FCE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				957B2FFAE04AEC10770D20A6 /* JDUsersHeaderViewInput.h */,
+				785717269EEC165D690A610D /* JDUsersHeaderViewOutput.h */,
+				F3BE896FBB6FA51D7B35F8DB /* JDUsersHeaderViewController.h */,
+				9E3282BE0837DD0AB0C1F67F /* JDUsersHeaderViewController.m */,
+				8C0B4523206A22AC00FA006B /* JDUsersHeaderViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCA1FF878B45662C6A7660F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7890D82D1E162959C4DB2928 /* JDFilesDetailViewInput.h */,
+				E8AA65C55B2C492A543EB13D /* JDFilesDetailViewOutput.h */,
+				6AA0E45B4AF1D50442361CD0 /* JDFilesDetailViewController.h */,
+				4FFF7F9223A2EE05F9BD0A83 /* JDFilesDetailViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC26853C2DD2E2C983072D5D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				21074F3166A3BA8584C677D7 /* JDGistDetailInteractorInput.h */,
+				A0127981BCB638F5AAD0B80C /* JDGistDetailInteractorOutput.h */,
+				4C62398D905E3E6AE59EA70E /* JDGistDetailInteractor.h */,
+				9AEFAFD14C38AE788676AA6E /* JDGistDetailInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EC6ED560351C9E2908E200C9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				7E05DF9346FDBFD104149216 /* JDUsersHeaderAssembly.h */,
+				089C9C23C094338AEB61002D /* JDUsersHeaderAssembly.m */,
+				8C0B4526206A23F800FA006B /* JDUsersHeaderModuleFactory.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3012C3A206BB6D700006BA0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3ECCCBD2069175000CB82D5 /* JDGistCell.h */,
+				F3ECCCBE2069175000CB82D5 /* JDGistCell.m */,
+				F3ECCCBF2069175000CB82D5 /* JDGistCell.xib */,
+				F358C874206A4264002F97FE /* JDUsersHeaderCell.h */,
+				F358C875206A4264002F97FE /* JDUsersHeaderCell.m */,
+				F358C877206A4270002F97FE /* JDUsersHeaderCell.xib */,
+				F3012C35206BB6D100006BA0 /* JDFileCell.h */,
+				F3012C36206BB6D100006BA0 /* JDFileCell.m */,
+				F3012C37206BB6D100006BA0 /* JDFileCell.xib */,
+				F3012C30206BB45100006BA0 /* JDGistDetailCell.h */,
+				F3012C31206BB45100006BA0 /* JDGistDetailCell.m */,
+				F3012C33206BB45C00006BA0 /* JDGistDetailCell.xib */,
+				8C50CE99206E035C003B8B07 /* JDCommitCell.h */,
+				8C50CE9A206E035C003B8B07 /* JDCommitCell.m */,
+				8C50CE9B206E035C003B8B07 /* JDCommitCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F3012C46206CE85B00006BA0 /* ResponseConverter */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C40206CE66700006BA0 /* JDResponseConverter.h */,
+				F3012C43206CE68600006BA0 /* JDResponseConverterImplementation.h */,
+				F3012C44206CE68600006BA0 /* JDResponseConverterImplementation.m */,
+			);
+			path = ResponseConverter;
+			sourceTree = "<group>";
+		};
+		F3012C47206CE88D00006BA0 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48D220628E18003695C7 /* GistsAssembly */,
+				8C5B8E2C206A16C400CEF3BC /* UsersAssembly */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		F3012C4B206CE8C700006BA0 /* ResponseAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C48206CE8C200006BA0 /* JDResponseConverterAssembly.h */,
+				F3012C49206CE8C200006BA0 /* JDResponseConverterAssembly.m */,
+			);
+			path = ResponseAssembly;
+			sourceTree = "<group>";
+		};
+		F3012C50206CE94800006BA0 /* CoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C4C206CE92A00006BA0 /* JDCoreDataService.h */,
+				F3012C4D206CE94400006BA0 /* JDCoreDataServiceImplementation.h */,
+				F3012C4E206CE94400006BA0 /* JDCoreDataServiceImplementation.m */,
+			);
+			path = CoreDataService;
+			sourceTree = "<group>";
+		};
+		F3012C54206CE96200006BA0 /* CoreDataAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C51206CE95F00006BA0 /* JDCoreDataServiceAssembly.h */,
+				F3012C52206CE95F00006BA0 /* JDCoreDataServiceAssembly.m */,
+			);
+			path = CoreDataAssembly;
+			sourceTree = "<group>";
+		};
+		F3012C58206CFF2E00006BA0 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C59206CFF5500006BA0 /* Assemblies */,
+				F3EA48FD20628E18003695C7 /* Network */,
+				F3EA495E2064D88D003695C7 /* PONSOConverter */,
+				F3012C46206CE85B00006BA0 /* ResponseConverter */,
+				F3012C50206CE94800006BA0 /* CoreDataService */,
+				F3012C5A206CFF9400006BA0 /* Categories */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		F3012C59206CFF5500006BA0 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA490020628E18003695C7 /* APIAssembly */,
+				F3EA49632064D8B1003695C7 /* PONSOAssembly */,
+				F3012C4B206CE8C700006BA0 /* ResponseAssembly */,
+				F3012C54206CE96200006BA0 /* CoreDataAssembly */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		F3012C5A206CFF9400006BA0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA495B2064D40B003695C7 /* NSArray+Utils.h */,
+				F3EA495C2064D40B003695C7 /* NSArray+Utils.m */,
+				8C64CE0E206B62590002AF0A /* UIColor+JD.h */,
+				8C64CE0F206B62590002AF0A /* UIColor+JD.m */,
+				8C64CE11206B63AC0002AF0A /* UIViewController+JD.h */,
+				8C64CE12206B63AC0002AF0A /* UIViewController+JD.m */,
+				8C64CE19206B65150002AF0A /* UIView+Utils.h */,
+				8C64CE1A206B65150002AF0A /* UIView+Utils.m */,
+				8C50CE9E206E06C7003B8B07 /* JDTableView+Utils.h */,
+				8C50CE9F206E06C7003B8B07 /* JDTableView+Utils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F3AC0C38206D00900091C0A7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C3C206CD26100006BA0 /* Popup.h */,
+				F3012C3D206CD26200006BA0 /* Popup.m */,
+				F3012C3B206CD26100006BA0 /* Popup.xib */,
+				8C64CE14206B64370002AF0A /* JDRetryStubView.h */,
+				8C64CE15206B64370002AF0A /* JDRetryStubView.m */,
+				8C64CE17206B64620002AF0A /* JDRetryStubView.xib */,
+				8C6FA583206AD8F700DF42C1 /* JDGistDetailHeaderView.h */,
+				8C6FA584206AD8F700DF42C1 /* JDGistDetailHeaderView.m */,
+				8C6FA581206AD5E500DF42C1 /* JDGistDetailHeaderView.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		F3C0CBBA205BED7F00658F75 = {
 			isa = PBXGroup;
 			children = (
 				F3C0CBC5205BED7F00658F75 /* GistsViewer */,
 				F3C0CBC4205BED7F00658F75 /* Products */,
+				900650B13A565A38BEBCD2BA /* Pods */,
+				0142F2D7C01D706EEF8236EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +1010,250 @@
 		F3C0CBC5205BED7F00658F75 /* GistsViewer */ = {
 			isa = PBXGroup;
 			children = (
-				F3C0CBC6205BED7F00658F75 /* AppDelegate.h */,
-				F3C0CBC7205BED7F00658F75 /* AppDelegate.m */,
-				F3C0CBC9205BED7F00658F75 /* ViewController.h */,
-				F3C0CBCA205BED7F00658F75 /* ViewController.m */,
-				F3C0CBCC205BED7F00658F75 /* Main.storyboard */,
-				F3C0CBCF205BED7F00658F75 /* Assets.xcassets */,
-				F3C0CBD1205BED7F00658F75 /* LaunchScreen.storyboard */,
-				F3C0CBD4205BED7F00658F75 /* Info.plist */,
-				F3C0CBD5205BED7F00658F75 /* main.m */,
+				F3EA48D920628E18003695C7 /* ApplicationLayer */,
+				F3012C58206CFF2E00006BA0 /* CoreLayer */,
+				F3EA48E420628E18003695C7 /* Modules */,
+				F3EA48D120628E18003695C7 /* Services */,
+				8C5B8E0F20640EF300CEF3BC /* Models */,
+				F3EA492A20628EAE003695C7 /* SupportingFiles */,
+				F3ECCCC520691CE000CB82D5 /* Classes */,
 			);
 			path = GistsViewer;
+			sourceTree = "<group>";
+		};
+		F3EA48D120628E18003695C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3012C47206CE88D00006BA0 /* Assemblies */,
+				8C5B8DD02064070A00CEF3BC /* GistsService */,
+				8C5B8E24206A168900CEF3BC /* UsersService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3EA48D220628E18003695C7 /* GistsAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48D420628E18003695C7 /* JDGistsServiceAssembly.h */,
+				F3EA48D320628E18003695C7 /* JDGistsServiceAssembly.m */,
+			);
+			path = GistsAssembly;
+			sourceTree = "<group>";
+		};
+		F3EA48D920628E18003695C7 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48DA20628E18003695C7 /* Assemblies */,
+				F3EA48DD20628E18003695C7 /* ApplicationCoordinator */,
+				F3EA48E120628E18003695C7 /* AppDelegate */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		F3EA48DA20628E18003695C7 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48DB20628E18003695C7 /* ApplicationAssembly.h */,
+				F3EA48DC20628E18003695C7 /* ApplicationAssembly.m */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		F3EA48DD20628E18003695C7 /* ApplicationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48DF20628E18003695C7 /* ApplicationCoordinator.h */,
+				F3EA48DE20628E18003695C7 /* ApplicationCoordinatorImplementation.h */,
+				F3EA48E020628E18003695C7 /* ApplicationCoordinatorImplementation.m */,
+			);
+			path = ApplicationCoordinator;
+			sourceTree = "<group>";
+		};
+		F3EA48E120628E18003695C7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48E220628E18003695C7 /* AppDelegate.h */,
+				F3EA48E320628E18003695C7 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F3EA48E420628E18003695C7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48E520628E18003695C7 /* Dashboard */,
+				917EF6AE52C8B3F073FFF1DD /* UsersHeader */,
+				008426E47652DD4E3304158F /* GistsList */,
+				428A0EDE3FBFD6950437E83E /* GistDetail */,
+				69CDFA68C381AF663190A4E4 /* FilesList */,
+				F8EFF4462E9F8B59DC6E323A /* FilesDetail */,
+				053244D54D0B6AC105D1BCA3 /* CommitList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F3EA48E520628E18003695C7 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48E620628E18003695C7 /* Assembly */,
+				F3EA48EE20628E18003695C7 /* View */,
+				F3EA48EA20628E18003695C7 /* Presenter */,
+				F3EA48F420628E18003695C7 /* Interactor */,
+				F3EA48F920628E18003695C7 /* Router */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F3EA48E620628E18003695C7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48E820628E18003695C7 /* JDDashboardModuleFactory.h */,
+				F3EA48E920628E18003695C7 /* JDDashboardAssembly.h */,
+				F3EA48E720628E18003695C7 /* JDDashboardAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3EA48EA20628E18003695C7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48EC20628E18003695C7 /* JDDashboardModuleInput.h */,
+				F3EA48EB20628E18003695C7 /* JDDashboardPresenter.h */,
+				F3EA48ED20628E18003695C7 /* JDDashboardPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3EA48EE20628E18003695C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48EF20628E18003695C7 /* JDDashboardViewInput.h */,
+				F3EA48F320628E18003695C7 /* JDDashboardViewOutput.h */,
+				F3EA48F220628E18003695C7 /* JDDashboardViewController.h */,
+				F3EA48F020628E18003695C7 /* JDDashboardViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3EA48F420628E18003695C7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48F620628E18003695C7 /* JDDashboardInteractorInput.h */,
+				F3EA48F820628E18003695C7 /* JDDashboardInteractorOutput.h */,
+				F3EA48F720628E18003695C7 /* JDDashboardInteractor.h */,
+				F3EA48F520628E18003695C7 /* JDDashboardInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3EA48F920628E18003695C7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA48FB20628E18003695C7 /* JDDashboardRouterInput.h */,
+				F3EA48FA20628E18003695C7 /* JDDashboardRouter.h */,
+				F3EA48FC20628E18003695C7 /* JDDashboardRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3EA48FD20628E18003695C7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA490720628E18003695C7 /* JDRoutes.h */,
+				F3EA48FE20628E18003695C7 /* JDRoutes.m */,
+				F3EA48FF20628E18003695C7 /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F3EA48FF20628E18003695C7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA490520628E18003695C7 /* API.h */,
+				F3EA490620628E18003695C7 /* APIImplementation.h */,
+				F3EA490420628E18003695C7 /* APIImplementation.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F3EA490020628E18003695C7 /* APIAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA490120628E18003695C7 /* APIAssembly.h */,
+				F3EA490220628E18003695C7 /* APIAssembly.m */,
+			);
+			path = APIAssembly;
+			sourceTree = "<group>";
+		};
+		F3EA492120628E9B003695C7 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA492220628E9B003695C7 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		F3EA492A20628EAE003695C7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA492420628E9B003695C7 /* Assets.xcassets */,
+				F3EA492120628E9B003695C7 /* Base.lproj */,
+				F3EA492520628E9B003695C7 /* Info.plist */,
+				F3EA492020628E9B003695C7 /* main.m */,
+				F3D77B2F206E3E510054099B /* GistsViewer-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F3EA495E2064D88D003695C7 /* PONSOConverter */ = {
+			isa = PBXGroup;
+			children = (
+				8C5B8E1F2064160800CEF3BC /* PONSOConverter.h */,
+				8C5B8E202064161700CEF3BC /* PONSOConverterImplementation.h */,
+				8C5B8E212064161700CEF3BC /* PONSOConverterImplementation.m */,
+			);
+			path = PONSOConverter;
+			sourceTree = "<group>";
+		};
+		F3EA49632064D8B1003695C7 /* PONSOAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA49602064D8AD003695C7 /* PONSOConverterAssembly.h */,
+				F3EA49612064D8AD003695C7 /* PONSOConverterAssembly.m */,
+			);
+			path = PONSOAssembly;
+			sourceTree = "<group>";
+		};
+		F3ECCCC520691CE000CB82D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8C50CE96206CBB89003B8B07 /* Enums.h */,
+				8C6FA578206AD54E00DF42C1 /* TableView */,
+				8C6FA57B206AD56C00DF42C1 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F51D84C51AA093B89739E673 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				51E23A66C1BB112E845006C4 /* JDGistsListRouterInput.h */,
+				184E50A82B068731B1428CB0 /* JDGistsListRouter.h */,
+				DD6D7C478C4F9BC2D8D6F561 /* JDGistsListRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F8EFF4462E9F8B59DC6E323A /* FilesDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7A65F3693A3ED466E10ACB28 /* Assembly */,
+				CCA1FF878B45662C6A7660F5 /* View */,
+				9879195FEF37BFF77600FA31 /* Presenter */,
+				B5F49B3573AFFEEB29354A28 /* Interactor */,
+				93BEB0FE4987AA472669CFBB /* Router */,
+			);
+			path = FilesDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +1263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3C0CBD9205BED7F00658F75 /* Build configuration list for PBXNativeTarget "GistsViewer" */;
 			buildPhases = (
+				C53CA45A70D0C37EB19AC40B /* [CP] Check Pods Manifest.lock */,
 				F3C0CBBF205BED7F00658F75 /* Sources */,
 				F3C0CBC0205BED7F00658F75 /* Frameworks */,
 				F3C0CBC1205BED7F00658F75 /* Resources */,
+				139E6937BC168F216BC863F5 /* [CP] Embed Pods Frameworks */,
+				43E3A64045DD8A335DFC8E30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,40 +1317,173 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C0CBD3205BED7F00658F75 /* LaunchScreen.storyboard in Resources */,
-				F3C0CBD0205BED7F00658F75 /* Assets.xcassets in Resources */,
-				F3C0CBCE205BED7F00658F75 /* Main.storyboard in Resources */,
+				F3012C34206BB45C00006BA0 /* JDGistDetailCell.xib in Resources */,
+				F3EA492820628E9B003695C7 /* Assets.xcassets in Resources */,
+				8C64CE18206B64620002AF0A /* JDRetryStubView.xib in Resources */,
+				8C6FA582206AD5E500DF42C1 /* JDGistDetailHeaderView.xib in Resources */,
+				F3ECCCC12069175000CB82D5 /* JDGistCell.xib in Resources */,
+				F358C878206A4270002F97FE /* JDUsersHeaderCell.xib in Resources */,
+				F3EA492720628E9B003695C7 /* LaunchScreen.storyboard in Resources */,
+				8C0B4524206A22AC00FA006B /* JDUsersHeaderViewController.xib in Resources */,
+				F3012C3E206CD26200006BA0 /* Popup.xib in Resources */,
+				F3012C39206BB6D100006BA0 /* JDFileCell.xib in Resources */,
+				8C50CE9D206E035C003B8B07 /* JDCommitCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		139E6937BC168F216BC863F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43E3A64045DD8A335DFC8E30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C53CA45A70D0C37EB19AC40B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GistsViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3C0CBBF205BED7F00658F75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C0CBCB205BED7F00658F75 /* ViewController.m in Sources */,
-				F3C0CBD6205BED7F00658F75 /* main.m in Sources */,
-				F3C0CBC8205BED7F00658F75 /* AppDelegate.m in Sources */,
+				8C5B8E27206A169C00CEF3BC /* JDUsersServiceImplementation.m in Sources */,
+				F3EA491720628E18003695C7 /* JDDashboardInteractor.m in Sources */,
+				F3EA491820628E18003695C7 /* JDDashboardRouter.m in Sources */,
+				F3EA491020628E18003695C7 /* ApplicationAssembly.m in Sources */,
+				F3EA49692064E51D003695C7 /* JDFile.m in Sources */,
+				F3012C45206CE68600006BA0 /* JDResponseConverterImplementation.m in Sources */,
+				F3EA491B20628E18003695C7 /* APIImplementation.m in Sources */,
+				F3AC0C44206D26380091C0A7 /* CommitListResponseObject.m in Sources */,
+				F3EA491920628E18003695C7 /* JDRoutes.m in Sources */,
+				8C64CE16206B64370002AF0A /* JDRetryStubView.m in Sources */,
+				F3EA490F20628E18003695C7 /* JDGistsServiceImplementation.m in Sources */,
+				F3EA49622064D8AD003695C7 /* PONSOConverterAssembly.m in Sources */,
+				F3EA490E20628E18003695C7 /* JDGistsServiceAssembly.m in Sources */,
+				F3EA491520628E18003695C7 /* JDDashboardViewController.m in Sources */,
+				8C5B8DFC20640D8400CEF3BC /* JDGist.m in Sources */,
+				F3EA491120628E18003695C7 /* ApplicationCoordinatorImplementation.m in Sources */,
+				F3012C38206BB6D100006BA0 /* JDFileCell.m in Sources */,
+				F3012C57206CF3A100006BA0 /* JDRelation.m in Sources */,
+				8C6FA585206AD8F700DF42C1 /* JDGistDetailHeaderView.m in Sources */,
+				F3ECCCD12069213300CB82D5 /* JDTableCell.m in Sources */,
+				F3EA491320628E18003695C7 /* JDDashboardAssembly.m in Sources */,
+				8C50CE9C206E035C003B8B07 /* JDCommitCell.m in Sources */,
+				F3EA491220628E18003695C7 /* AppDelegate.m in Sources */,
+				F3012C4F206CE94400006BA0 /* JDCoreDataServiceImplementation.m in Sources */,
+				8C5B8E222064161700CEF3BC /* PONSOConverterImplementation.m in Sources */,
+				F3ECCCC02069175000CB82D5 /* JDGistCell.m in Sources */,
+				8CF07905206C238400B86DD5 /* File+CoreDataProperties.m in Sources */,
+				8C50CEA0206E06C7003B8B07 /* JDTableView+Utils.m in Sources */,
+				8C50CEA8206E0F90003B8B07 /* ForksListResponseObject.m in Sources */,
+				8C64CE13206B63AC0002AF0A /* UIViewController+JD.m in Sources */,
+				F3EA491A20628E18003695C7 /* APIAssembly.m in Sources */,
+				8C5B8E1E2064122900CEF3BC /* GistsListResponseObject.m in Sources */,
+				F3AC0C41206D1EDA0091C0A7 /* JDCommit.m in Sources */,
+				F3EA495D2064D40B003695C7 /* NSArray+Utils.m in Sources */,
+				8C5B8DFF20640DA600CEF3BC /* Gists.xcdatamodeld in Sources */,
+				F3ECCCCE2069212000CB82D5 /* JDTableSection.m in Sources */,
+				F3ECCCD42069241600CB82D5 /* JDTableView.m in Sources */,
+				F3EA492620628E9B003695C7 /* main.m in Sources */,
+				F3EA491420628E18003695C7 /* JDDashboardPresenter.m in Sources */,
+				F3EA49662064E213003695C7 /* JDOwner.m in Sources */,
+				F3ECCCC420691CDB00CB82D5 /* JDTableViewController.m in Sources */,
+				8C5B8E2B206A16BF00CEF3BC /* JDUsersServiceAssembly.m in Sources */,
+				987638889B071CDC799A2EB5 /* JDGistsListAssembly.m in Sources */,
+				F3AC0C3D206D1E8D0091C0A7 /* (null) in Sources */,
+				E8BAF47386FC82DC7EBEA69B /* JDGistsListViewController.m in Sources */,
+				F358C876206A4264002F97FE /* JDUsersHeaderCell.m in Sources */,
+				D3EA5015B702C262F1B45B0F /* JDGistsListPresenter.m in Sources */,
+				F3012C32206BB45100006BA0 /* JDGistDetailCell.m in Sources */,
+				6F3ED628DD185860E5618F1D /* JDGistsListInteractor.m in Sources */,
+				AAAFC406525BB0C4B6F63548 /* JDGistsListRouter.m in Sources */,
+				D4FC256840B5B86A40B354E7 /* JDUsersHeaderAssembly.m in Sources */,
+				B2C8A209145BFBA40AA92B34 /* JDUsersHeaderViewController.m in Sources */,
+				39FD11EC9A761B7F426629CB /* JDUsersHeaderPresenter.m in Sources */,
+				945E98830F2AD12474E1C69B /* JDUsersHeaderInteractor.m in Sources */,
+				F9DBD4490DB61344CEF1373E /* JDUsersHeaderRouter.m in Sources */,
+				04BFA71758B8ACD2370BBDF2 /* JDGistDetailAssembly.m in Sources */,
+				F3AC0C3E206D1E8D0091C0A7 /* Commit+CoreDataProperties.m in Sources */,
+				8C64CE1B206B65150002AF0A /* UIView+Utils.m in Sources */,
+				F3012C3F206CD26200006BA0 /* Popup.m in Sources */,
+				9B314772453E4DBC93E62E2A /* JDGistDetailViewController.m in Sources */,
+				7DD729F65750A4A5722E7345 /* JDGistDetailPresenter.m in Sources */,
+				8C64CE10206B62590002AF0A /* UIColor+JD.m in Sources */,
+				23A6AC0958B257F2712C2BAE /* JDGistDetailInteractor.m in Sources */,
+				4DA88E16CA1957ECDD234F22 /* JDGistDetailRouter.m in Sources */,
+				D8A796B9A2E2BECB0B03E9F1 /* JDFilesListAssembly.m in Sources */,
+				45BAD52E336461B320121D5C /* JDFilesListViewController.m in Sources */,
+				A2F29C67E8311630E85829AB /* JDFilesListPresenter.m in Sources */,
+				BEE8411806D683AD97CFD266 /* JDFilesListInteractor.m in Sources */,
+				F3012C4A206CE8C200006BA0 /* JDResponseConverterAssembly.m in Sources */,
+				1CF076E563A65B8668955920 /* JDFilesListRouter.m in Sources */,
+				C015597FDB9478CD5F381282 /* JDFilesDetailAssembly.m in Sources */,
+				D25276444CDB6756B81B0ED4 /* JDFilesDetailViewController.m in Sources */,
+				F3012C53206CE95F00006BA0 /* JDCoreDataServiceAssembly.m in Sources */,
+				2A6C46CF6D3F06A0DAA7D82E /* JDFilesDetailPresenter.m in Sources */,
+				66417B26DC471D5F834B57EF /* JDFilesDetailInteractor.m in Sources */,
+				5FCDFDAEA46C60498589F3D2 /* JDFilesDetailRouter.m in Sources */,
+				16E2EB783EE0D5F2373CD115 /* JDCommitListAssembly.m in Sources */,
+				C7E2A14713B7AA1DD4F7918D /* JDCommitListViewController.m in Sources */,
+				A3D7167BD298341EF02BB424 /* JDCommitListPresenter.m in Sources */,
+				9A0B58AA75B89991E6BF3F19 /* JDCommitListInteractor.m in Sources */,
+				2012B8AE162E905A7A94F2B5 /* JDCommitListRouter.m in Sources */,
+				8C50CEAB206E1109003B8B07 /* FilesListResponseObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3C0CBCC205BED7F00658F75 /* Main.storyboard */ = {
+		F3EA492220628E9B003695C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F3C0CBCD205BED7F00658F75 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F3C0CBD1205BED7F00658F75 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3C0CBD2205BED7F00658F75 /* Base */,
+				F3EA492320628E9B003695C7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -276,13 +1597,16 @@
 		};
 		F3C0CBDA205BED7F00658F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB496CDE951DD0C33244EABB /* Pods-GistsViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8FAKRB9BJV;
-				INFOPLIST_FILE = GistsViewer/Info.plist;
+				DEVELOPMENT_TEAM = TWW7UPTWB8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GistsViewer/SupportingFiles/GistsViewer-Prefix.pch";
+				INFOPLIST_FILE = GistsViewer/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JD.GistsViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = JD.GistsViewer.personla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,13 +1614,16 @@
 		};
 		F3C0CBDB205BED7F00658F75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2942D6EF522D69A36D23CD /* Pods-GistsViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8FAKRB9BJV;
-				INFOPLIST_FILE = GistsViewer/Info.plist;
+				DEVELOPMENT_TEAM = TWW7UPTWB8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GistsViewer/SupportingFiles/GistsViewer-Prefix.pch";
+				INFOPLIST_FILE = GistsViewer/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JD.GistsViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = JD.GistsViewer.personla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,6 +1651,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C5B8DFD20640DA600CEF3BC /* Gists.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C5B8DFE20640DA600CEF3BC /* Gists.xcdatamodel */,
+			);
+			currentVersion = 8C5B8DFE20640DA600CEF3BC /* Gists.xcdatamodel */;
+			path = Gists.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F3C0CBBB205BED7F00658F75 /* Project object */;
 }
