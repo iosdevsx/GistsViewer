@@ -7,14 +7,18 @@
 //
 
 #import "ApplicationAssembly.h"
-#import "ApplicationCoordinatorImplementation.h"
 #import "AppDelegate.h"
-#import "JDDashboardAssembly.h"
+#import "Coordinator.h"
+#import "ApplicationCoordinator.h"
+#import "CoordinatorsFactory.h"
+#import "Router.h"
+#import "RouterImplementation.h"
+#import "CoordinatorsFactoryAssembly.h"
 
 
 @interface ApplicationAssembly()
 
-@property (nonatomic, strong) JDDashboardAssembly *dashboardAssembly;
+@property (nonatomic, strong) CoordinatorsFactoryAssembly *coordinatorsAssembly;
 
 @end
 
@@ -27,10 +31,20 @@
     }];
 }
 
-- (id <ApplicationCoordinator>)applicationCoordinator {
-    return [TyphoonDefinition withClass:[ApplicationCoordinatorImplementation class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(dashboardFactory) with:self.dashboardAssembly];
-        [definition injectProperty:@selector(appDelegate) with:[self appDelegate]];
+- (id <Coordinator>)applicationCoordinator {
+    return [TyphoonDefinition withClass:[ApplicationCoordinator class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithFactory:router:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:self.coordinatorsAssembly];
+            [initializer injectParameterWith:[self router]];
+        }];
+    }];
+}
+
+- (id <Router>)router {
+    return [TyphoonDefinition withClass:[RouterImplementation class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithRootViewController:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:[self rootController]];
+        }];
     }];
 }
 
@@ -39,7 +53,12 @@
         [definition useInitializer:@selector(initWithFrame:) parameters:^(TyphoonMethod *initializer) {
             [initializer injectParameterWith:[NSValue valueWithCGRect:[[UIScreen mainScreen] bounds]]];
         }];
+        [definition injectProperty:@selector(rootViewController) with:[self rootController]];
     }];
+}
+
+- (UINavigationController *)rootController {
+    return [TyphoonDefinition withClass:[UINavigationController class]];
 }
 
 @end

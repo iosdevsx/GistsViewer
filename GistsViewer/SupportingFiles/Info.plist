@@ -34,6 +34,8 @@
 		<string>JDResponseConverterAssembly</string>
 		<string>JDGistsListAssembly</string>
 		<string>PONSOConverterAssembly</string>
+		<string>CoordinatorsFactoryAssembly</string>
+		<string>DashboardFlowModulesAssembly</string>
 		<string>JDUsersServiceAssembly</string>
 		<string>APIAssembly</string>
 	</array>

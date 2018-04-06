@@ -10,11 +10,13 @@
 #import <UIKit/UIKit.h>
 
 @protocol JDDashboardViewInput;
+@protocol Presentable;
+@protocol JDDashboardModuleOutput;
 
 @protocol JDDashboardModuleInput
 
-- (UIViewController *)view;
+- (UIViewController <Presentable> *)view;
 
-- (void)configureModule;
+- (void)configureModuleWithOutput:(id <JDDashboardModuleOutput>)output;
 
 @end

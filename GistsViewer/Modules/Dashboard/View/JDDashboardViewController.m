@@ -25,6 +25,10 @@
 
 #pragma mark - Методы жизненного цикла
 
+- (UIViewController *)toPresent {
+    return self;
+}
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	[self.output didTriggerViewReadyEvent];

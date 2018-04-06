@@ -18,6 +18,6 @@
 
 @property (nonatomic, strong) id<JDDashboardViewInput> view;
 @property (nonatomic, strong) id<JDDashboardInteractorInput> interactor;
-@property (nonatomic, strong) id<JDDashboardRouterInput> router;
+@property (nonatomic, strong) id<JDDashboardRouterInput> router; 
 
 @end
