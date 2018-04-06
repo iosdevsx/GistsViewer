@@ -9,9 +9,11 @@
 #import "DashboardCoordinator.h"
 #import "JDDashboardModuleFactory.h"
 #import "JDDashboardModuleInput.h"
+#import "JDDashboardModuleOutput.h"
+#import "GistsListCoordinator.h"
 
 
-@interface DashboardCoordinator()
+@interface DashboardCoordinator() <JDDashboardModuleOutput>
 
 @end
 
@@ -22,10 +24,17 @@
 }
 
 - (void)showDashboard {
-//    id <JDDashboardModuleFactory> dashboardFactory = [self.factory dashboardFactory];
     id <JDDashboardModuleInput> presenter = [self.dashboardFactory presenterDashboard];
-    [presenter configureModule];
+    [presenter configureModuleWithOutput:self];
     [self.router setRootModule:presenter.view];
+}
+
+- (void)userSelected:(JDOwner *)user {
+    
+}
+
+- (void)runGistsListFlow {
+    
 }
 
 @end

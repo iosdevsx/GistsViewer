@@ -32,7 +32,8 @@
 }
 
 - (void)runMainFlow {
-    id <Coordinator> dashboardCoordinator = [self.coordinatorsFactory dashboardCoordinatorWithRouter:self.router];
+    id <Coordinator> dashboardCoordinator = [self.coordinatorsFactory dashboardCoordinatorWithRouter:self.router
+                                                                                             factory:self.coordinatorsFactory];
     [self addCoordinator:dashboardCoordinator];
     [dashboardCoordinator start];
 }

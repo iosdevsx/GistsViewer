@@ -14,6 +14,7 @@
 #import "JDGistsListModuleOutput.h"
 #import "JDUsersHeaderModuleInput.h"
 #import "JDUsersHeaderModuleOutput.h"
+#import "JDDashboardModuleOutput.h"
 
 
 @interface JDDashboardPresenter() <JDGistsListModuleOutput, JDUsersHeaderModuleOutput>
@@ -62,7 +63,7 @@
 #pragma mark - JDUsersHeaderModuleOutput
 
 - (void)selectedUser:(JDOwner *)user {
-    [self.router openGistsListModuleForUser:user];
+    [self.output userSelected:user];
 }
 
 @end

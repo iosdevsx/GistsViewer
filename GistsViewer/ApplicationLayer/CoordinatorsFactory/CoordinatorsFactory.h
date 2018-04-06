@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "Coordinator.h"
 #import "Router.h"
+#import "CoordinatorsFactory.h"
 
 @protocol CoordinatorsFactory <NSObject>
 
-- (id <Coordinator>)dashboardCoordinatorWithRouter:(id <Router>)router;
+- (id <Coordinator>)dashboardCoordinatorWithRouter:(id <Router>)router
+                                           factory:(id <CoordinatorsFactory>)factory;
+
+- (id <Coordinator>)gistsListCoordinatorWithRouter:(id <Router>)router;
 
 @end

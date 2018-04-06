@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^FinishFlow)(void);
+
 @protocol DashboardCoordinatorOutput <NSObject>
 
 @end

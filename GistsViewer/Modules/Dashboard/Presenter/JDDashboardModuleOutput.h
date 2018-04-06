@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class JDOwner;
+
 @protocol JDDashboardModuleOutput <NSObject>
 
-- (void)openGistsListModuleForUser:(JDOwner *)user;
+- (void)userSelected:(JDOwner *)user;
 
 @end

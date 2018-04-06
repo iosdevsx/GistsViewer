@@ -10,9 +10,9 @@
 #import "CoordinatorsFactory.h"
 #import "Coordinator.h"
 #import "DashboardCoordinator.h"
-#import "DashboardFlowModulesAssembly.h"
 #import "JDDashboardAssembly.h"
 #import "JDGistDetailAssembly.h"
+#import "GistsListCoordinator.h"
 
 
 @interface CoordinatorsFactoryAssembly()
@@ -24,11 +24,19 @@
 
 @implementation CoordinatorsFactoryAssembly
 
-- (id<Coordinator>)dashboardCoordinatorWithRouter:(id<Router>)router {
+- (id <Coordinator>)dashboardCoordinatorWithRouter:(id <Router>)router
+                                           factory:(id <CoordinatorsFactory>)factory {
     return [TyphoonDefinition withClass:[DashboardCoordinator class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(router) with:router];
+        [definition injectProperty:@selector(factory) with:factory];
         [definition injectProperty:@selector(dashboardFactory) with:self.dashboardAssembly];
         [definition injectProperty:@selector(gistDetailFactory) with:self.gistDetailAssembly];
+    }];
+}
+
+- (id <Coordinator>)gistsListCoordinatorWithRouter:(id <Router>)router {
+    return [TyphoonDefinition withClass:[GistsListCoordinator class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(router) with:router];
     }];
 }
 

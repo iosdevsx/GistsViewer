@@ -9,17 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "BaseCoordinator.h"
 #import "Router.h"
-#import "DashboardFlowModulesFactory.h"
 #import "DashboardCoordinatorOutput.h"
+#import "CoordinatorsFactory.h"
 
 
 @protocol JDDashboardModuleFactory;
 @protocol JDGistDetailModuleFactory;
 
-@interface DashboardCoordinator : BaseCoordinator, DashboardCoordinatorOutput
+@interface DashboardCoordinator : BaseCoordinator <DashboardCoordinatorOutput>
 
-@property (nonatomic, strong) id <Router> router;
-//@property (nonatomic, strong) id <DashboardFlowModulesFactory> factory;
+@property (nonatomic, weak) id <Router> router;
+@property (nonatomic, weak) id <CoordinatorsFactory> factory;
 
 @property (nonatomic, strong) id <JDDashboardModuleFactory> dashboardFactory;
 @property (nonatomic, strong) id <JDGistDetailModuleFactory> gistDetailFactory;
