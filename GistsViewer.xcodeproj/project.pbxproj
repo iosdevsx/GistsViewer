@@ -68,6 +68,12 @@
 		F3012C4F206CE94400006BA0 /* JDCoreDataServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C4E206CE94400006BA0 /* JDCoreDataServiceImplementation.m */; };
 		F3012C53206CE95F00006BA0 /* JDCoreDataServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C52206CE95F00006BA0 /* JDCoreDataServiceAssembly.m */; };
 		F3012C57206CF3A100006BA0 /* JDRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3012C56206CF3A100006BA0 /* JDRelation.m */; };
+		F3049AA72077BD040018E6C6 /* BaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3049AA62077BD040018E6C6 /* BaseCoordinator.m */; };
+		F3049AAA2077BE7F0018E6C6 /* ApplicationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3049AA92077BE7F0018E6C6 /* ApplicationCoordinator.m */; };
+		F3049AB02077C2C40018E6C6 /* RouterImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3049AAF2077C2C40018E6C6 /* RouterImplementation.m */; };
+		F3049AB62077C5E70018E6C6 /* DashboardCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3049AB52077C5E70018E6C6 /* DashboardCoordinator.m */; };
+		F3049ABF2077CB510018E6C6 /* CoordinatorsFactoryAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3049ABE2077CB510018E6C6 /* CoordinatorsFactoryAssembly.m */; };
+		F3049AC42077EF3E0018E6C6 /* GistsListCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3049AC32077EF3E0018E6C6 /* GistsListCoordinator.m */; };
 		F358C876206A4264002F97FE /* JDUsersHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F358C875206A4264002F97FE /* JDUsersHeaderCell.m */; };
 		F358C878206A4270002F97FE /* JDUsersHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F358C877206A4270002F97FE /* JDUsersHeaderCell.xib */; };
 		F3AC0C3D206D1E8D0091C0A7 /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -77,7 +83,6 @@
 		F3EA490E20628E18003695C7 /* JDGistsServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48D320628E18003695C7 /* JDGistsServiceAssembly.m */; };
 		F3EA490F20628E18003695C7 /* JDGistsServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48D720628E18003695C7 /* JDGistsServiceImplementation.m */; };
 		F3EA491020628E18003695C7 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48DC20628E18003695C7 /* ApplicationAssembly.m */; };
-		F3EA491120628E18003695C7 /* ApplicationCoordinatorImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48E020628E18003695C7 /* ApplicationCoordinatorImplementation.m */; };
 		F3EA491220628E18003695C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48E320628E18003695C7 /* AppDelegate.m */; };
 		F3EA491320628E18003695C7 /* JDDashboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48E720628E18003695C7 /* JDDashboardAssembly.m */; };
 		F3EA491420628E18003695C7 /* JDDashboardPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA48ED20628E18003695C7 /* JDDashboardPresenter.m */; };
@@ -262,6 +267,25 @@
 		F3012C52206CE95F00006BA0 /* JDCoreDataServiceAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCoreDataServiceAssembly.m; sourceTree = "<group>"; };
 		F3012C55206CF3A100006BA0 /* JDRelation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDRelation.h; sourceTree = "<group>"; };
 		F3012C56206CF3A100006BA0 /* JDRelation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDRelation.m; sourceTree = "<group>"; };
+		F3049AA42077BCE70018E6C6 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
+		F3049AA52077BD040018E6C6 /* BaseCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCoordinator.h; sourceTree = "<group>"; };
+		F3049AA62077BD040018E6C6 /* BaseCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCoordinator.m; sourceTree = "<group>"; };
+		F3049AA82077BE7F0018E6C6 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
+		F3049AA92077BE7F0018E6C6 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
+		F3049AAB2077BFCB0018E6C6 /* CoordinatorsFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatorsFactory.h; sourceTree = "<group>"; };
+		F3049AAC2077C0420018E6C6 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		F3049AAD2077C0DD0018E6C6 /* Presentable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentable.h; sourceTree = "<group>"; };
+		F3049AAE2077C2C40018E6C6 /* RouterImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterImplementation.h; sourceTree = "<group>"; };
+		F3049AAF2077C2C40018E6C6 /* RouterImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterImplementation.m; sourceTree = "<group>"; };
+		F3049AB42077C5E70018E6C6 /* DashboardCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardCoordinator.h; sourceTree = "<group>"; };
+		F3049AB52077C5E70018E6C6 /* DashboardCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardCoordinator.m; sourceTree = "<group>"; };
+		F3049ABB2077CA430018E6C6 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		F3049ABD2077CB510018E6C6 /* CoordinatorsFactoryAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatorsFactoryAssembly.h; sourceTree = "<group>"; };
+		F3049ABE2077CB510018E6C6 /* CoordinatorsFactoryAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatorsFactoryAssembly.m; sourceTree = "<group>"; };
+		F3049AC02077DD7F0018E6C6 /* JDDashboardModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDDashboardModuleOutput.h; sourceTree = "<group>"; };
+		F3049AC12077E2560018E6C6 /* DashboardCoordinatorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardCoordinatorOutput.h; sourceTree = "<group>"; };
+		F3049AC22077EF3E0018E6C6 /* GistsListCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GistsListCoordinator.h; sourceTree = "<group>"; };
+		F3049AC32077EF3E0018E6C6 /* GistsListCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GistsListCoordinator.m; sourceTree = "<group>"; };
 		F358C874206A4264002F97FE /* JDUsersHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDUsersHeaderCell.h; sourceTree = "<group>"; };
 		F358C875206A4264002F97FE /* JDUsersHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDUsersHeaderCell.m; sourceTree = "<group>"; };
 		F358C877206A4270002F97FE /* JDUsersHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JDUsersHeaderCell.xib; sourceTree = "<group>"; };
@@ -282,9 +306,6 @@
 		F3EA48D820628E18003695C7 /* JDGistsServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGistsServiceImplementation.h; sourceTree = "<group>"; };
 		F3EA48DB20628E18003695C7 /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
 		F3EA48DC20628E18003695C7 /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
-		F3EA48DE20628E18003695C7 /* ApplicationCoordinatorImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinatorImplementation.h; sourceTree = "<group>"; };
-		F3EA48DF20628E18003695C7 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
-		F3EA48E020628E18003695C7 /* ApplicationCoordinatorImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinatorImplementation.m; sourceTree = "<group>"; };
 		F3EA48E220628E18003695C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3EA48E320628E18003695C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F3EA48E720628E18003695C7 /* JDDashboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDashboardAssembly.m; sourceTree = "<group>"; };
@@ -973,6 +994,16 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		F3049ABC2077CB3C0018E6C6 /* CoordinatorsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F3049AAB2077BFCB0018E6C6 /* CoordinatorsFactory.h */,
+				F3049ABD2077CB510018E6C6 /* CoordinatorsFactoryAssembly.h */,
+				F3049ABE2077CB510018E6C6 /* CoordinatorsFactoryAssembly.m */,
+			);
+			path = CoordinatorsFactory;
+			sourceTree = "<group>";
+		};
 		F3AC0C38206D00900091C0A7 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -1046,6 +1077,14 @@
 				F3EA48DA20628E18003695C7 /* Assemblies */,
 				F3EA48DD20628E18003695C7 /* ApplicationCoordinator */,
 				F3EA48E120628E18003695C7 /* AppDelegate */,
+				F3049AA42077BCE70018E6C6 /* Coordinator.h */,
+				F3049AA52077BD040018E6C6 /* BaseCoordinator.h */,
+				F3049AA62077BD040018E6C6 /* BaseCoordinator.m */,
+				F3049ABC2077CB3C0018E6C6 /* CoordinatorsFactory */,
+				F3049AAD2077C0DD0018E6C6 /* Presentable.h */,
+				F3049AAC2077C0420018E6C6 /* Router.h */,
+				F3049AAE2077C2C40018E6C6 /* RouterImplementation.h */,
+				F3049AAF2077C2C40018E6C6 /* RouterImplementation.m */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -1062,9 +1101,8 @@
 		F3EA48DD20628E18003695C7 /* ApplicationCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA48DF20628E18003695C7 /* ApplicationCoordinator.h */,
-				F3EA48DE20628E18003695C7 /* ApplicationCoordinatorImplementation.h */,
-				F3EA48E020628E18003695C7 /* ApplicationCoordinatorImplementation.m */,
+				F3049AA82077BE7F0018E6C6 /* ApplicationCoordinator.h */,
+				F3049AA92077BE7F0018E6C6 /* ApplicationCoordinator.m */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -1081,6 +1119,11 @@
 		F3EA48E420628E18003695C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F3049AC12077E2560018E6C6 /* DashboardCoordinatorOutput.h */,
+				F3049AB42077C5E70018E6C6 /* DashboardCoordinator.h */,
+				F3049AB52077C5E70018E6C6 /* DashboardCoordinator.m */,
+				F3049AC22077EF3E0018E6C6 /* GistsListCoordinator.h */,
+				F3049AC32077EF3E0018E6C6 /* GistsListCoordinator.m */,
 				F3EA48E520628E18003695C7 /* Dashboard */,
 				917EF6AE52C8B3F073FFF1DD /* UsersHeader */,
 				008426E47652DD4E3304158F /* GistsList */,
@@ -1088,6 +1131,7 @@
 				69CDFA68C381AF663190A4E4 /* FilesList */,
 				F8EFF4462E9F8B59DC6E323A /* FilesDetail */,
 				053244D54D0B6AC105D1BCA3 /* CommitList */,
+				F3049ABB2077CA430018E6C6 /* BaseView.h */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1118,6 +1162,7 @@
 			isa = PBXGroup;
 			children = (
 				F3EA48EC20628E18003695C7 /* JDDashboardModuleInput.h */,
+				F3049AC02077DD7F0018E6C6 /* JDDashboardModuleOutput.h */,
 				F3EA48EB20628E18003695C7 /* JDDashboardPresenter.h */,
 				F3EA48ED20628E18003695C7 /* JDDashboardPresenter.m */,
 			);
@@ -1407,7 +1452,6 @@
 				F3EA490E20628E18003695C7 /* JDGistsServiceAssembly.m in Sources */,
 				F3EA491520628E18003695C7 /* JDDashboardViewController.m in Sources */,
 				8C5B8DFC20640D8400CEF3BC /* JDGist.m in Sources */,
-				F3EA491120628E18003695C7 /* ApplicationCoordinatorImplementation.m in Sources */,
 				F3012C38206BB6D100006BA0 /* JDFileCell.m in Sources */,
 				F3012C57206CF3A100006BA0 /* JDRelation.m in Sources */,
 				8C6FA585206AD8F700DF42C1 /* JDGistDetailHeaderView.m in Sources */,
@@ -1423,6 +1467,7 @@
 				8C50CEA8206E0F90003B8B07 /* ForksListResponseObject.m in Sources */,
 				8C64CE13206B63AC0002AF0A /* UIViewController+JD.m in Sources */,
 				F3EA491A20628E18003695C7 /* APIAssembly.m in Sources */,
+				F3049ABF2077CB510018E6C6 /* CoordinatorsFactoryAssembly.m in Sources */,
 				8C5B8E1E2064122900CEF3BC /* GistsListResponseObject.m in Sources */,
 				F3AC0C41206D1EDA0091C0A7 /* JDCommit.m in Sources */,
 				F3EA495D2064D40B003695C7 /* NSArray+Utils.m in Sources */,
@@ -1433,17 +1478,21 @@
 				F3EA491420628E18003695C7 /* JDDashboardPresenter.m in Sources */,
 				F3EA49662064E213003695C7 /* JDOwner.m in Sources */,
 				F3ECCCC420691CDB00CB82D5 /* JDTableViewController.m in Sources */,
+				F3049AAA2077BE7F0018E6C6 /* ApplicationCoordinator.m in Sources */,
 				8C5B8E2B206A16BF00CEF3BC /* JDUsersServiceAssembly.m in Sources */,
 				987638889B071CDC799A2EB5 /* JDGistsListAssembly.m in Sources */,
 				F3AC0C3D206D1E8D0091C0A7 /* (null) in Sources */,
 				E8BAF47386FC82DC7EBEA69B /* JDGistsListViewController.m in Sources */,
 				F358C876206A4264002F97FE /* JDUsersHeaderCell.m in Sources */,
+				F3049AC42077EF3E0018E6C6 /* GistsListCoordinator.m in Sources */,
 				D3EA5015B702C262F1B45B0F /* JDGistsListPresenter.m in Sources */,
 				F3012C32206BB45100006BA0 /* JDGistDetailCell.m in Sources */,
 				6F3ED628DD185860E5618F1D /* JDGistsListInteractor.m in Sources */,
 				AAAFC406525BB0C4B6F63548 /* JDGistsListRouter.m in Sources */,
+				F3049AB62077C5E70018E6C6 /* DashboardCoordinator.m in Sources */,
 				D4FC256840B5B86A40B354E7 /* JDUsersHeaderAssembly.m in Sources */,
 				B2C8A209145BFBA40AA92B34 /* JDUsersHeaderViewController.m in Sources */,
+				F3049AB02077C2C40018E6C6 /* RouterImplementation.m in Sources */,
 				39FD11EC9A761B7F426629CB /* JDUsersHeaderPresenter.m in Sources */,
 				945E98830F2AD12474E1C69B /* JDUsersHeaderInteractor.m in Sources */,
 				F9DBD4490DB61344CEF1373E /* JDUsersHeaderRouter.m in Sources */,
@@ -1471,6 +1520,7 @@
 				16E2EB783EE0D5F2373CD115 /* JDCommitListAssembly.m in Sources */,
 				C7E2A14713B7AA1DD4F7918D /* JDCommitListViewController.m in Sources */,
 				A3D7167BD298341EF02BB424 /* JDCommitListPresenter.m in Sources */,
+				F3049AA72077BD040018E6C6 /* BaseCoordinator.m in Sources */,
 				9A0B58AA75B89991E6BF3F19 /* JDCommitListInteractor.m in Sources */,
 				2012B8AE162E905A7A94F2B5 /* JDCommitListRouter.m in Sources */,
 				8C50CEAB206E1109003B8B07 /* FilesListResponseObject.m in Sources */,

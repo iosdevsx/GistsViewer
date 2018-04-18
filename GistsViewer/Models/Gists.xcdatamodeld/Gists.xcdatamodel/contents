@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="Commit" representedClassName="Commit" syncable="YES" codeGenerationType="class">
         <attribute name="additions" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="commitedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -29,7 +29,7 @@
         <attribute name="public" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="updated_at" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="commits" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Commit" inverseName="gist" inverseEntity="Commit" syncable="YES"/>
+        <relationship name="commits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Commit" inverseName="gist" inverseEntity="Commit" syncable="YES"/>
         <relationship name="files" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="File" inverseName="gist" inverseEntity="File" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="gist" inverseEntity="Owner" syncable="YES"/>
     </entity>
@@ -54,9 +54,9 @@
         <relationship name="gist" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Gist" inverseName="owner" inverseEntity="Gist" syncable="YES"/>
     </entity>
     <elements>
-        <element name="File" positionX="-126" positionY="-45" width="128" height="148"/>
-        <element name="Gist" positionX="-353" positionY="-106" width="128" height="255"/>
-        <element name="Owner" positionX="-119" positionY="171" width="128" height="313"/>
-        <element name="Commit" positionX="-353" positionY="234" width="128" height="135"/>
+        <element name="Commit" positionX="-614" positionY="-9" width="128" height="135"/>
+        <element name="File" positionX="-126" positionY="-216" width="128" height="148"/>
+        <element name="Gist" positionX="-353" positionY="-106" width="128" height="253"/>
+        <element name="Owner" positionX="-56" positionY="90" width="128" height="313"/>
     </elements>
 </model>

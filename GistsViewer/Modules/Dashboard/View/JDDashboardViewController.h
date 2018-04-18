@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "JDDashboardViewInput.h"
+#import "BaseView.h"
 
 @protocol JDDashboardViewOutput;
 
-@interface JDDashboardViewController : UIViewController <JDDashboardViewInput>
+@interface JDDashboardViewController : UIViewController <JDDashboardViewInput, BaseView>
 
 @property (nonatomic, strong) id<JDDashboardViewOutput> output;
 

@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ApplicationCoordinator.h"
+#import "Coordinator.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) id <ApplicationCoordinator> appCoordinator;
-
+@property (strong, nonatomic) id <Coordinator> appCoordinator;
 
 @end
 

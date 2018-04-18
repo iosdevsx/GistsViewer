@@ -14,6 +14,7 @@
 #import "JDGistsListModuleOutput.h"
 #import "JDUsersHeaderModuleInput.h"
 #import "JDUsersHeaderModuleOutput.h"
+#import "JDDashboardModuleOutput.h"
 
 
 @interface JDDashboardPresenter() <JDGistsListModuleOutput, JDUsersHeaderModuleOutput>
@@ -23,15 +24,18 @@
 
 @property (nonatomic, strong) NSArray *users;
 
+@property (nonatomic, weak) id <JDDashboardModuleOutput> output;
+
 @end
 
 @implementation JDDashboardPresenter
 
 #pragma mark - Методы JDDashboardModuleInput
 
-- (void)configureModule {
+- (void)configureModuleWithOutput:(id <JDDashboardModuleOutput>)output {
     self.presenterGistsList = [self.router presenterGistsListWithOutputPoint:self];
     self.presenterUsers = [self.router presenterUsersHeaderWithOutputPoint:self];
+    self.output = output;
 }
 
 #pragma mark - Методы JDDashboardViewOutput
@@ -59,7 +63,7 @@
 #pragma mark - JDUsersHeaderModuleOutput
 
 - (void)selectedUser:(JDOwner *)user {
-    [self.router openGistsListModuleForUser:user];
+    [self.output userSelected:user];
 }
 
 @end
